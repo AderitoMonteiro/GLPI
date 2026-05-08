@@ -1,0 +1,162 @@
+2026-03-01 14:18:43 [@fr-int-web1788.main-hosting.eu]
+[login] 3: glpi ligou-se do IP 98.97.72.209
+2026-03-01 21:11:02 [@fr-int-web1788.main-hosting.eu]
+[login] 3: glpi ligou-se do IP 98.97.72.209
+2026-03-01 21:18:17 [@fr-int-web1788.main-hosting.eu]
+[login] 3: Falhou login para incv do IP 98.97.72.209
+2026-03-01 21:18:41 [@fr-int-web1788.main-hosting.eu]
+[login] 3: incv ligou-se do IP 98.97.72.209
+2026-03-01 21:33:25 [@fr-int-web1788.main-hosting.eu]
+[login] 3: Falhou login para  do IP 98.97.72.209
+2026-03-01 21:34:38 [@fr-int-web1788.main-hosting.eu]
+[login] 3: incv ligou-se do IP 98.97.72.209
+2026-03-01 21:41:56 [2@fr-int-web1788.main-hosting.eu]
+[setup] 3: incv editou a configuração de notificações de e-mails
+2026-03-03 17:12:41 [@fr-int-web1788.main-hosting.eu]
+[login] 3: incv ligou-se do IP 213.150.192.214
+2026-03-06 16:11:38 [@fr-int-web1788.main-hosting.eu]
+[login] 3: incv ligou-se do IP 213.150.192.214
+2026-03-07 03:33:03 [@fr-int-web1788.main-hosting.eu]
+[login] 3: Failed login for rubie.ernser@bdcimail.com from IP 159.89.216.7
+2026-03-09 12:35:59 [@fr-int-web1788.main-hosting.eu]
+[login] 3: Falhou login para admin do IP 41.221.207.37
+2026-03-09 12:36:39 [@fr-int-web1788.main-hosting.eu]
+[login] 3: Falhou login para admin do IP 41.221.207.165
+2026-03-09 12:37:10 [@fr-int-web1788.main-hosting.eu]
+[login] 3: Falhou login para admin do IP 213.150.192.214
+2026-03-12 10:06:12 [@fr-int-web1788.main-hosting.eu]
+[login] 3: Falhou login para admin do IP 213.150.192.214
+2026-03-12 10:06:42 [@fr-int-web1788.main-hosting.eu]
+[login] 3: Falhou login para admin do IP 213.150.192.214
+2026-03-12 10:08:26 [@fr-int-web1788.main-hosting.eu]
+[login] 3: Falhou login para incv do IP 213.150.192.214
+2026-03-12 10:08:55 [@fr-int-web1788.main-hosting.eu]
+[login] 3: incv ligou-se do IP 213.150.192.214
+2026-03-20 16:20:57 [@fr-int-web1788.main-hosting.eu]
+[login] 3: Falhou login para incv do IP 41.221.207.52
+2026-03-20 16:21:27 [@fr-int-web1788.main-hosting.eu]
+[login] 3: incv ligou-se do IP 41.221.207.52
+2026-03-25 22:19:43 [@fr-int-web1788.main-hosting.eu]
+[login] 3: Falhou login para incv do IP 98.97.72.41
+2026-03-25 22:20:03 [@fr-int-web1788.main-hosting.eu]
+[login] 3: incv ligou-se do IP 98.97.72.41
+2026-03-26 09:52:35 [@fr-int-web1788.main-hosting.eu]
+[login] 3: incv ligou-se do IP 41.79.127.85
+2026-03-27 10:44:47 [@fr-int-web1788.main-hosting.eu]
+[login] 3: Failed login for incv from IP 2001:690:22c0:9201::22
+2026-03-27 10:45:11 [@fr-int-web1788.main-hosting.eu]
+[login] 3: incv login from IP 2001:690:22c0:9201::22
+2026-03-27 11:05:23 [@fr-int-web1788.main-hosting.eu]
+[login] 3: incv ligou-se do IP 213.150.192.214
+2026-03-27 23:40:14 [@fr-int-web1788.main-hosting.eu]
+[login] 3: incv ligou-se do IP 98.97.72.38
+2026-03-29 19:55:15 [@fr-int-web1788.main-hosting.eu]
+[login] 3: Falhou login para incv do IP 98.97.72.45
+2026-03-29 19:56:03 [@fr-int-web1788.main-hosting.eu]
+[login] 3: incv ligou-se do IP 98.97.72.45
+2026-03-29 20:53:23 [2@fr-int-web1788.main-hosting.eu]
+[setup] [Plugin 55] 3: Extensão ActualTime foi instalada por incv (2).
+2026-03-29 20:53:33 [2@fr-int-web1788.main-hosting.eu]
+[setup] [Plugin 56] 3: Extensão ActualTime foi ativada por incv (2).
+2026-03-30 06:41:54 [@fr-int-web1788.main-hosting.eu]
+[login] 3: teste ligou-se do IP 98.97.72.45
+2026-03-30 06:47:06 [@fr-int-web1788.main-hosting.eu]
+[login] 3: incv ligou-se do IP 98.97.72.45
+2026-03-30 07:06:05 [@fr-int-web1788.main-hosting.eu]
+[login] 3: teste ligou-se do IP 98.97.72.45
+2026-03-30 07:08:30 [@fr-int-web1788.main-hosting.eu]
+[login] 3: incv ligou-se do IP 98.97.72.45
+2026-03-30 09:44:55 [@fr-int-web1788.main-hosting.eu]
+[login] 3: Failed login for Teste from IP 41.221.207.173
+2026-03-30 09:45:40 [@fr-int-web1788.main-hosting.eu]
+[login] 3: teste login from IP 41.221.207.173
+2026-03-30 10:39:39 [@fr-int-web1788.main-hosting.eu]
+[login] 3: Failed login for  from IP 2001:690:22c0:9201::38
+2026-03-30 10:39:54 [@fr-int-web1788.main-hosting.eu]
+[login] 3: Failed login for teste from IP 2001:690:22c0:9201::38
+2026-03-30 10:40:23 [@fr-int-web1788.main-hosting.eu]
+[login] 3: teste login from IP 2001:690:22c0:9201::38
+2026-03-30 12:25:46 [@fr-int-web1788.main-hosting.eu]
+[login] 3: Falhou login para  do IP 41.221.207.45
+2026-03-30 12:28:09 [@fr-int-web1788.main-hosting.eu]
+[login] 3: Falhou login para  do IP 41.221.207.45
+2026-03-30 16:34:09 [@fr-int-web1788.main-hosting.eu]
+[login] 3: Falhou login para  do IP 213.150.192.214
+2026-03-30 16:55:25 [@fr-int-web1788.main-hosting.eu]
+[login] 3: teste login from IP 213.150.192.214
+2026-03-31 06:18:32 [@fr-int-web1788.main-hosting.eu]
+[login] 3: incv ligou-se do IP 98.97.72.49
+2026-03-31 06:29:44 [@fr-int-web1788.main-hosting.eu]
+[login] 3: Falhou login para siniac do IP 98.97.72.49
+2026-03-31 06:30:11 [@fr-int-web1788.main-hosting.eu]
+[login] 3: Falhou login para def do IP 98.97.72.49
+2026-03-31 06:31:00 [@fr-int-web1788.main-hosting.eu]
+[login] 3: teste ligou-se do IP 98.97.72.49
+2026-03-31 10:14:12 [@fr-int-web1788.main-hosting.eu]
+[login] 3: incv ligou-se do IP 213.150.192.214
+2026-03-31 10:16:33 [@fr-int-web1788.main-hosting.eu]
+[login] 3: Falhou login para Manuel Garcia do IP 213.150.192.214
+2026-03-31 10:17:15 [@fr-int-web1788.main-hosting.eu]
+[login] 3: Manuel Garcia ligou-se do IP 213.150.192.214
+2026-03-31 10:18:33 [@fr-int-web1788.main-hosting.eu]
+[login] 3: Manuel Garcia ligou-se do IP 213.150.192.214
+2026-03-31 10:31:11 [@fr-int-web1788.main-hosting.eu]
+[login] 3: Falhou login para CCV do IP 213.150.192.214
+2026-03-31 10:31:26 [@fr-int-web1788.main-hosting.eu]
+[login] 3: Falhou login para ccv do IP 213.150.192.214
+2026-03-31 10:31:52 [@fr-int-web1788.main-hosting.eu]
+[login] 3: ccv ligou-se do IP 213.150.192.214
+2026-03-31 10:33:25 [@fr-int-web1788.main-hosting.eu]
+[login] 3: ccv ligou-se do IP 213.150.192.214
+2026-03-31 10:37:42 [@fr-int-web1788.main-hosting.eu]
+[login] 3: Falhou login para cvv do IP 213.150.192.214
+2026-03-31 10:37:56 [@fr-int-web1788.main-hosting.eu]
+[login] 3: ccv ligou-se do IP 213.150.192.214
+2026-03-31 10:43:38 [@fr-int-web1788.main-hosting.eu]
+[login] 3: incv ligou-se do IP 213.150.192.214
+2026-03-31 10:52:21 [@fr-int-web1788.main-hosting.eu]
+[login] 3: ccv ligou-se do IP 213.150.192.214
+2026-03-31 10:53:56 [@fr-int-web1788.main-hosting.eu]
+[login] 3: ccv ligou-se do IP 213.150.192.214
+2026-03-31 10:54:41 [@fr-int-web1788.main-hosting.eu]
+[login] 3: def ligou-se do IP 213.150.192.214
+2026-03-31 10:57:49 [@fr-int-web1788.main-hosting.eu]
+[login] 3: def ligou-se do IP 213.150.192.214
+2026-03-31 10:58:30 [@fr-int-web1788.main-hosting.eu]
+[login] 3: def ligou-se do IP 213.150.192.214
+2026-03-31 11:01:41 [@fr-int-web1788.main-hosting.eu]
+[login] 3: def ligou-se do IP 213.150.192.214
+2026-03-31 11:03:38 [@fr-int-web1788.main-hosting.eu]
+[login] 3: def ligou-se do IP 213.150.192.214
+2026-03-31 11:47:58 [@fr-int-web1788.main-hosting.eu]
+[login] 3: def ligou-se do IP 41.221.207.32
+2026-03-31 11:49:18 [@fr-int-web1788.main-hosting.eu]
+[login] 3: ccv fez login no IP 41.221.207.33
+2026-03-31 12:10:49 [@fr-int-web1788.main-hosting.eu]
+[login] 3: def ligou-se do IP 213.150.192.214
+2026-03-31 12:11:41 [@fr-int-web1788.main-hosting.eu]
+[login] 3: incv ligou-se do IP 213.150.192.214
+2026-03-31 21:46:23 [@fr-int-web1788.main-hosting.eu]
+[login] 3: Falhou login para  do IP 41.74.135.47
+2026-04-01 13:09:05 [@fr-int-web1788.main-hosting.eu]
+[login] 3: incv ligou-se do IP 102.207.154.116
+2026-04-28 12:39:42 [@fr-int-web1788.main-hosting.eu]
+[login] 3: incv ligou-se do IP 213.150.192.214
+2026-04-29 10:59:57 [@fr-int-web1788.main-hosting.eu]
+[login] 3: incv ligou-se do IP 38.44.77.118
+2026-05-04 13:07:55 [@fr-int-web1788.main-hosting.eu]
+[login] 3: Falhou login para  do IP 213.150.192.214
+2026-05-04 16:14:24 [@fr-int-web1788.main-hosting.eu]
+[login] 3: incv ligou-se do IP 213.150.192.214
+2026-05-05 16:22:24 [@fr-int-web1788.main-hosting.eu]
+[login] 3: incv ligou-se do IP 213.150.192.214
+2026-05-06 10:42:51 [@fr-int-web1788.main-hosting.eu]
+[login] 3: incv ligou-se do IP 213.150.192.214
+2026-05-06 12:11:06 [@fr-int-web1788.main-hosting.eu]
+[login] 3: incv ligou-se do IP 213.150.192.214
+2026-05-06 12:15:00 [@fr-int-web1788.main-hosting.eu]
+[login] 3: Falhou login para teste do IP 213.150.192.214
+2026-05-06 12:15:52 [@fr-int-web1788.main-hosting.eu]
+[login] 3: teste ligou-se do IP 213.150.192.214
+2026-05-08 11:47:33 [@RAI-GV-INCV-23]
+[login] 3: incv ligou-se do IP 

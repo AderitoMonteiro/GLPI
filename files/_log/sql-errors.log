@@ -1,0 +1,1281 @@
+[2026-03-31 10:38:08] glpisqllog.ERROR: DBmysql::doQuery() in /home/u981745852/domains/suporteincv.com/public_html/src/DBmysql.php line 395
+  *** MySQL query error:
+  SQL: SELECT `glpi_plugin_actualtime_tasks`.`id`, `glpi_plugin_actualtime_tasks`.`items_id` FROM `glpi_tickettasks` INNER JOIN `glpi_plugin_actualtime_tasks` ON (`glpi_plugin_actualtime_tasks`.`items_id` = `glpi_tickettasks`.`id` AND `glpi_plugin_actualtime_tasks`.`itemtype` = 'TicketTask') WHERE `tickets_id` = '1' AND `actual_end` IS NULL
+  Error: Table 'u981745852_incv.glpi_plugin_actualtime_tasks' doesn't exist
+  Backtrace :
+  src/DBmysqlIterator.php:112                        DBmysql->doQuery()
+  src/DBmysql.php:1105                               DBmysqlIterator->execute()
+  marketplace/actualtime/hook.php:166                DBmysql->request()
+  src/Plugin.php:1713                                plugin_actualtime_preSolutionAdd()
+  src/CommonDBTM.php:1308                            Plugin::doHook()
+  front/itilsolution.form.php:63                     CommonDBTM->add()
+  {"user":"2@fr-int-web1788.main-hosting.eu"} 
+[2026-03-31 12:06:32] glpisqllog.ERROR: DBmysql::doQuery() in /home/u981745852/domains/suporteincv.com/public_html/src/DBmysql.php line 395
+  *** MySQL query error:
+  SQL: SELECT `glpi_plugin_actualtime_tasks`.`id`, `glpi_plugin_actualtime_tasks`.`items_id` FROM `glpi_tickettasks` INNER JOIN `glpi_plugin_actualtime_tasks` ON (`glpi_plugin_actualtime_tasks`.`items_id` = `glpi_tickettasks`.`id` AND `glpi_plugin_actualtime_tasks`.`itemtype` = 'TicketTask') WHERE `tickets_id` = '2' AND `actual_end` IS NULL
+  Error: Table 'u981745852_incv.glpi_plugin_actualtime_tasks' doesn't exist
+  Backtrace :
+  src/DBmysqlIterator.php:112                        DBmysql->doQuery()
+  src/DBmysql.php:1105                               DBmysqlIterator->execute()
+  marketplace/actualtime/hook.php:166                DBmysql->request()
+  src/Plugin.php:1713                                plugin_actualtime_preSolutionAdd()
+  src/CommonDBTM.php:1308                            Plugin::doHook()
+  front/itilsolution.form.php:63                     CommonDBTM->add()
+  {"user":"2@fr-int-web1788.main-hosting.eu"} 
+[2026-04-28 15:36:27] glpisqllog.ERROR: DBmysql::doQuery() in /home/u981745852/domains/suporteincv.com/public_html/src/DBmysql.php line 395
+  *** MySQL query error:
+  SQL: SELECT * FROM `glpi_plugin_actualtime_configs` WHERE `glpi_plugin_actualtime_configs`.`id` = '1' LIMIT 1
+  Error: Table 'u981745852_incv.glpi_plugin_actualtime_configs' doesn't exist
+  Backtrace :
+  src/DBmysqlIterator.php:112                        DBmysql->doQuery()
+  src/DBmysql.php:1105                               DBmysqlIterator->execute()
+  src/CommonDBTM.php:304                             DBmysql->request()
+  marketplace/actualtime/inc/config.class.php:92     CommonDBTM->getFromDB()
+  marketplace/actualtime/inc/config.class.php:173    PluginActualtimeConfig::showConfigForm()
+  src/CommonGLPI.php:694                             PluginActualtimeConfig::displayTabContentForItem()
+  ajax/common.tabs.php:120                           CommonGLPI::displayStandardTab()
+  {"user":"2@fr-int-web1788.main-hosting.eu"} 
+[2026-04-28 15:36:27] glpisqllog.ERROR: DBmysql::doQuery() in /home/u981745852/domains/suporteincv.com/public_html/src/DBmysql.php line 395
+  *** MySQL query error:
+  SQL: SHOW COLUMNS FROM `glpi_plugin_actualtime_configs`
+  Error: Table 'u981745852_incv.glpi_plugin_actualtime_configs' doesn't exist
+  Backtrace :
+  src/DBmysql.php:954                                DBmysql->doQuery()
+  src/CommonDBTM.php:618                             DBmysql->listFields()
+  src/CommonDBTM.php:3180                            CommonDBTM->getEmpty()
+  .../twig/twig/src/Extension/CoreExtension.php:1764 CommonDBTM->isEntityAssign()
+  ...ates/30/30fa02db7da934359ceef5d431f6f375.php:60 Twig\Extension\CoreExtension::getAttribute()
+  vendor/twig/twig/src/Template.php:360              __TwigTemplate_d967e35aff623eaa071430f3e132b15a->doDisplay()
+  vendor/twig/twig/src/Template.php:327              Twig\Template->yield()
+  vendor/twig/twig/src/TemplateWrapper.php:45        Twig\Template->display()
+  src/Application/View/TemplateRenderer.php:184      Twig\TemplateWrapper->display()
+  src/CommonDBTM.php:2861                            Glpi\Application\View\TemplateRenderer->display()
+  marketplace/actualtime/inc/config.class.php:94     CommonDBTM->showFormHeader()
+  marketplace/actualtime/inc/config.class.php:173    PluginActualtimeConfig::showConfigForm()
+  src/CommonGLPI.php:694                             PluginActualtimeConfig::displayTabContentForItem()
+  ajax/common.tabs.php:120                           CommonGLPI::displayStandardTab()
+  {"user":"2@fr-int-web1788.main-hosting.eu","mem_usage":"0.006\", 7.39Mio)"} 
+[2026-04-28 15:36:27] glpisqllog.ERROR: DBmysql::doQuery() in /home/u981745852/domains/suporteincv.com/public_html/src/DBmysql.php line 395
+  *** MySQL query error:
+  SQL: SHOW COLUMNS FROM `glpi_plugin_actualtime_configs`
+  Error: Table 'u981745852_incv.glpi_plugin_actualtime_configs' doesn't exist
+  Backtrace :
+  src/DBmysql.php:954                                DBmysql->doQuery()
+  src/CommonDBTM.php:618                             DBmysql->listFields()
+  src/CommonDBTM.php:3230                            CommonDBTM->getEmpty()
+  src/CommonDBTM.php:2518                            CommonDBTM->maybeDeleted()
+  .../twig/twig/src/Extension/CoreExtension.php:1764 CommonDBTM->canEdit()
+  ...tes/30/30fa02db7da934359ceef5d431f6f375.php:101 Twig\Extension\CoreExtension::getAttribute()
+  vendor/twig/twig/src/Template.php:360              __TwigTemplate_d967e35aff623eaa071430f3e132b15a->doDisplay()
+  vendor/twig/twig/src/Template.php:327              Twig\Template->yield()
+  vendor/twig/twig/src/TemplateWrapper.php:45        Twig\Template->display()
+  src/Application/View/TemplateRenderer.php:184      Twig\TemplateWrapper->display()
+  src/CommonDBTM.php:2861                            Glpi\Application\View\TemplateRenderer->display()
+  marketplace/actualtime/inc/config.class.php:94     CommonDBTM->showFormHeader()
+  marketplace/actualtime/inc/config.class.php:173    PluginActualtimeConfig::showConfigForm()
+  src/CommonGLPI.php:694                             PluginActualtimeConfig::displayTabContentForItem()
+  ajax/common.tabs.php:120                           CommonGLPI::displayStandardTab()
+  {"user":"2@fr-int-web1788.main-hosting.eu","mem_usage":"0.001\", 7.39Mio)"} 
+[2026-04-28 15:36:27] glpisqllog.ERROR: DBmysql::doQuery() in /home/u981745852/domains/suporteincv.com/public_html/src/DBmysql.php line 395
+  *** MySQL query error:
+  SQL: SHOW COLUMNS FROM `glpi_plugin_actualtime_configs`
+  Error: Table 'u981745852_incv.glpi_plugin_actualtime_configs' doesn't exist
+  Backtrace :
+  src/DBmysql.php:954                                DBmysql->doQuery()
+  src/CommonDBTM.php:618                             DBmysql->listFields()
+  src/CommonDBTM.php:2927                            CommonDBTM->getEmpty()
+  src/CommonDBTM.php:2524                            CommonDBTM->can()
+  .../twig/twig/src/Extension/CoreExtension.php:1764 CommonDBTM->canEdit()
+  ...tes/30/30fa02db7da934359ceef5d431f6f375.php:101 Twig\Extension\CoreExtension::getAttribute()
+  vendor/twig/twig/src/Template.php:360              __TwigTemplate_d967e35aff623eaa071430f3e132b15a->doDisplay()
+  vendor/twig/twig/src/Template.php:327              Twig\Template->yield()
+  vendor/twig/twig/src/TemplateWrapper.php:45        Twig\Template->display()
+  src/Application/View/TemplateRenderer.php:184      Twig\TemplateWrapper->display()
+  src/CommonDBTM.php:2861                            Glpi\Application\View\TemplateRenderer->display()
+  marketplace/actualtime/inc/config.class.php:94     CommonDBTM->showFormHeader()
+  marketplace/actualtime/inc/config.class.php:173    PluginActualtimeConfig::showConfigForm()
+  src/CommonGLPI.php:694                             PluginActualtimeConfig::displayTabContentForItem()
+  ajax/common.tabs.php:120                           CommonGLPI::displayStandardTab()
+  {"user":"2@fr-int-web1788.main-hosting.eu","mem_usage":"0.001\", 7.40Mio)"} 
+[2026-04-28 15:36:27] glpisqllog.ERROR: DBmysql::doQuery() in /home/u981745852/domains/suporteincv.com/public_html/src/DBmysql.php line 395
+  *** MySQL query error:
+  SQL: SHOW COLUMNS FROM `glpi_plugin_actualtime_configs`
+  Error: Table 'u981745852_incv.glpi_plugin_actualtime_configs' doesn't exist
+  Backtrace :
+  src/DBmysql.php:954                                DBmysql->doQuery()
+  src/CommonDBTM.php:618                             DBmysql->listFields()
+  src/CommonDBTM.php:3375                            CommonDBTM->getEmpty()
+  src/CommonDBTM.php:3390                            CommonDBTM->maybePrivate()
+  src/CommonDBTM.php:2944                            CommonDBTM->isPrivate()
+  src/CommonDBTM.php:2524                            CommonDBTM->can()
+  .../twig/twig/src/Extension/CoreExtension.php:1764 CommonDBTM->canEdit()
+  ...tes/30/30fa02db7da934359ceef5d431f6f375.php:101 Twig\Extension\CoreExtension::getAttribute()
+  vendor/twig/twig/src/Template.php:360              __TwigTemplate_d967e35aff623eaa071430f3e132b15a->doDisplay()
+  vendor/twig/twig/src/Template.php:327              Twig\Template->yield()
+  vendor/twig/twig/src/TemplateWrapper.php:45        Twig\Template->display()
+  src/Application/View/TemplateRenderer.php:184      Twig\TemplateWrapper->display()
+  src/CommonDBTM.php:2861                            Glpi\Application\View\TemplateRenderer->display()
+  marketplace/actualtime/inc/config.class.php:94     CommonDBTM->showFormHeader()
+  marketplace/actualtime/inc/config.class.php:173    PluginActualtimeConfig::showConfigForm()
+  src/CommonGLPI.php:694                             PluginActualtimeConfig::displayTabContentForItem()
+  ajax/common.tabs.php:120                           CommonGLPI::displayStandardTab()
+  {"user":"2@fr-int-web1788.main-hosting.eu","mem_usage":"0.001\", 7.40Mio)"} 
+[2026-04-28 15:36:27] glpisqllog.ERROR: DBmysql::doQuery() in /home/u981745852/domains/suporteincv.com/public_html/src/DBmysql.php line 395
+  *** MySQL query error:
+  SQL: SHOW COLUMNS FROM `glpi_plugin_actualtime_configs`
+  Error: Table 'u981745852_incv.glpi_plugin_actualtime_configs' doesn't exist
+  Backtrace :
+  src/DBmysql.php:954                                DBmysql->doQuery()
+  src/CommonDBTM.php:618                             DBmysql->listFields()
+  src/CommonDBTM.php:2927                            CommonDBTM->getEmpty()
+  src/CommonDBTM.php:2525                            CommonDBTM->can()
+  .../twig/twig/src/Extension/CoreExtension.php:1764 CommonDBTM->canEdit()
+  ...tes/30/30fa02db7da934359ceef5d431f6f375.php:101 Twig\Extension\CoreExtension::getAttribute()
+  vendor/twig/twig/src/Template.php:360              __TwigTemplate_d967e35aff623eaa071430f3e132b15a->doDisplay()
+  vendor/twig/twig/src/Template.php:327              Twig\Template->yield()
+  vendor/twig/twig/src/TemplateWrapper.php:45        Twig\Template->display()
+  src/Application/View/TemplateRenderer.php:184      Twig\TemplateWrapper->display()
+  src/CommonDBTM.php:2861                            Glpi\Application\View\TemplateRenderer->display()
+  marketplace/actualtime/inc/config.class.php:94     CommonDBTM->showFormHeader()
+  marketplace/actualtime/inc/config.class.php:173    PluginActualtimeConfig::showConfigForm()
+  src/CommonGLPI.php:694                             PluginActualtimeConfig::displayTabContentForItem()
+  ajax/common.tabs.php:120                           CommonGLPI::displayStandardTab()
+  {"user":"2@fr-int-web1788.main-hosting.eu","mem_usage":"0.001\", 7.40Mio)"} 
+[2026-04-28 15:36:27] glpisqllog.ERROR: DBmysql::doQuery() in /home/u981745852/domains/suporteincv.com/public_html/src/DBmysql.php line 395
+  *** MySQL query error:
+  SQL: SHOW COLUMNS FROM `glpi_plugin_actualtime_configs`
+  Error: Table 'u981745852_incv.glpi_plugin_actualtime_configs' doesn't exist
+  Backtrace :
+  src/DBmysql.php:954                                DBmysql->doQuery()
+  src/CommonDBTM.php:618                             DBmysql->listFields()
+  src/CommonDBTM.php:3375                            CommonDBTM->getEmpty()
+  src/CommonDBTM.php:3390                            CommonDBTM->maybePrivate()
+  src/CommonDBTM.php:2944                            CommonDBTM->isPrivate()
+  src/CommonDBTM.php:2525                            CommonDBTM->can()
+  .../twig/twig/src/Extension/CoreExtension.php:1764 CommonDBTM->canEdit()
+  ...tes/30/30fa02db7da934359ceef5d431f6f375.php:101 Twig\Extension\CoreExtension::getAttribute()
+  vendor/twig/twig/src/Template.php:360              __TwigTemplate_d967e35aff623eaa071430f3e132b15a->doDisplay()
+  vendor/twig/twig/src/Template.php:327              Twig\Template->yield()
+  vendor/twig/twig/src/TemplateWrapper.php:45        Twig\Template->display()
+  src/Application/View/TemplateRenderer.php:184      Twig\TemplateWrapper->display()
+  src/CommonDBTM.php:2861                            Glpi\Application\View\TemplateRenderer->display()
+  marketplace/actualtime/inc/config.class.php:94     CommonDBTM->showFormHeader()
+  marketplace/actualtime/inc/config.class.php:173    PluginActualtimeConfig::showConfigForm()
+  src/CommonGLPI.php:694                             PluginActualtimeConfig::displayTabContentForItem()
+  ajax/common.tabs.php:120                           CommonGLPI::displayStandardTab()
+  {"user":"2@fr-int-web1788.main-hosting.eu","mem_usage":"0.001\", 7.40Mio)"} 
+[2026-04-28 15:36:27] glpisqllog.ERROR: DBmysql::doQuery() in /home/u981745852/domains/suporteincv.com/public_html/src/DBmysql.php line 395
+  *** MySQL query error:
+  SQL: SHOW COLUMNS FROM `glpi_plugin_actualtime_configs`
+  Error: Table 'u981745852_incv.glpi_plugin_actualtime_configs' doesn't exist
+  Backtrace :
+  src/DBmysql.php:954                                DBmysql->doQuery()
+  src/CommonDBTM.php:618                             DBmysql->listFields()
+  src/CommonDBTM.php:2927                            CommonDBTM->getEmpty()
+  src/CommonDBTM.php:2526                            CommonDBTM->can()
+  .../twig/twig/src/Extension/CoreExtension.php:1764 CommonDBTM->canEdit()
+  ...tes/30/30fa02db7da934359ceef5d431f6f375.php:101 Twig\Extension\CoreExtension::getAttribute()
+  vendor/twig/twig/src/Template.php:360              __TwigTemplate_d967e35aff623eaa071430f3e132b15a->doDisplay()
+  vendor/twig/twig/src/Template.php:327              Twig\Template->yield()
+  vendor/twig/twig/src/TemplateWrapper.php:45        Twig\Template->display()
+  src/Application/View/TemplateRenderer.php:184      Twig\TemplateWrapper->display()
+  src/CommonDBTM.php:2861                            Glpi\Application\View\TemplateRenderer->display()
+  marketplace/actualtime/inc/config.class.php:94     CommonDBTM->showFormHeader()
+  marketplace/actualtime/inc/config.class.php:173    PluginActualtimeConfig::showConfigForm()
+  src/CommonGLPI.php:694                             PluginActualtimeConfig::displayTabContentForItem()
+  ajax/common.tabs.php:120                           CommonGLPI::displayStandardTab()
+  {"user":"2@fr-int-web1788.main-hosting.eu","mem_usage":"0.001\", 7.40Mio)"} 
+[2026-04-28 15:36:27] glpisqllog.ERROR: DBmysql::doQuery() in /home/u981745852/domains/suporteincv.com/public_html/src/DBmysql.php line 395
+  *** MySQL query error:
+  SQL: SHOW COLUMNS FROM `glpi_plugin_actualtime_configs`
+  Error: Table 'u981745852_incv.glpi_plugin_actualtime_configs' doesn't exist
+  Backtrace :
+  src/DBmysql.php:954                                DBmysql->doQuery()
+  src/CommonDBTM.php:618                             DBmysql->listFields()
+  src/CommonDBTM.php:3375                            CommonDBTM->getEmpty()
+  src/CommonDBTM.php:3390                            CommonDBTM->maybePrivate()
+  src/CommonDBTM.php:2944                            CommonDBTM->isPrivate()
+  src/CommonDBTM.php:2526                            CommonDBTM->can()
+  .../twig/twig/src/Extension/CoreExtension.php:1764 CommonDBTM->canEdit()
+  ...tes/30/30fa02db7da934359ceef5d431f6f375.php:101 Twig\Extension\CoreExtension::getAttribute()
+  vendor/twig/twig/src/Template.php:360              __TwigTemplate_d967e35aff623eaa071430f3e132b15a->doDisplay()
+  vendor/twig/twig/src/Template.php:327              Twig\Template->yield()
+  vendor/twig/twig/src/TemplateWrapper.php:45        Twig\Template->display()
+  src/Application/View/TemplateRenderer.php:184      Twig\TemplateWrapper->display()
+  src/CommonDBTM.php:2861                            Glpi\Application\View\TemplateRenderer->display()
+  marketplace/actualtime/inc/config.class.php:94     CommonDBTM->showFormHeader()
+  marketplace/actualtime/inc/config.class.php:173    PluginActualtimeConfig::showConfigForm()
+  src/CommonGLPI.php:694                             PluginActualtimeConfig::displayTabContentForItem()
+  ajax/common.tabs.php:120                           CommonGLPI::displayStandardTab()
+  {"user":"2@fr-int-web1788.main-hosting.eu","mem_usage":"0.001\", 7.40Mio)"} 
+[2026-04-28 15:36:27] glpisqllog.ERROR: DBmysql::doQuery() in /home/u981745852/domains/suporteincv.com/public_html/src/DBmysql.php line 395
+  *** MySQL query error:
+  SQL: SHOW COLUMNS FROM `glpi_plugin_actualtime_configs`
+  Error: Table 'u981745852_incv.glpi_plugin_actualtime_configs' doesn't exist
+  Backtrace :
+  src/DBmysql.php:954                                DBmysql->doQuery()
+  src/CommonDBTM.php:618                             DBmysql->listFields()
+  src/CommonDBTM.php:3230                            CommonDBTM->getEmpty()
+  src/CommonDBTM.php:2518                            CommonDBTM->maybeDeleted()
+  .../twig/twig/src/Extension/CoreExtension.php:1764 CommonDBTM->canEdit()
+  ...tes/78/783323c9e7302dd474c5fad1127b2a1f.php:132 Twig\Extension\CoreExtension::getAttribute()
+  vendor/twig/twig/src/Template.php:360              __TwigTemplate_1ab8c5cdddb74d0bd536d6a65c432456->doDisplay()
+  vendor/twig/twig/src/Template.php:335              Twig\Template->yield()
+  vendor/twig/twig/src/TemplateWrapper.php:38        Twig\Template->render()
+  .../twig/twig/src/Extension/CoreExtension.php:1435 Twig\TemplateWrapper->render()
+  ...tes/30/30fa02db7da934359ceef5d431f6f375.php:132 Twig\Extension\CoreExtension::include()
+  vendor/twig/twig/src/Template.php:360              __TwigTemplate_d967e35aff623eaa071430f3e132b15a->doDisplay()
+  vendor/twig/twig/src/Template.php:327              Twig\Template->yield()
+  vendor/twig/twig/src/TemplateWrapper.php:45        Twig\Template->display()
+  src/Application/View/TemplateRenderer.php:184      Twig\TemplateWrapper->display()
+  src/CommonDBTM.php:2861                            Glpi\Application\View\TemplateRenderer->display()
+  marketplace/actualtime/inc/config.class.php:94     CommonDBTM->showFormHeader()
+  marketplace/actualtime/inc/config.class.php:173    PluginActualtimeConfig::showConfigForm()
+  src/CommonGLPI.php:694                             PluginActualtimeConfig::displayTabContentForItem()
+  ajax/common.tabs.php:120                           CommonGLPI::displayStandardTab()
+  {"user":"2@fr-int-web1788.main-hosting.eu","mem_usage":"0.005\", 8.33Mio)"} 
+[2026-04-28 15:36:27] glpisqllog.ERROR: DBmysql::doQuery() in /home/u981745852/domains/suporteincv.com/public_html/src/DBmysql.php line 395
+  *** MySQL query error:
+  SQL: SHOW COLUMNS FROM `glpi_plugin_actualtime_configs`
+  Error: Table 'u981745852_incv.glpi_plugin_actualtime_configs' doesn't exist
+  Backtrace :
+  src/DBmysql.php:954                                DBmysql->doQuery()
+  src/CommonDBTM.php:618                             DBmysql->listFields()
+  src/CommonDBTM.php:2927                            CommonDBTM->getEmpty()
+  src/CommonDBTM.php:2524                            CommonDBTM->can()
+  .../twig/twig/src/Extension/CoreExtension.php:1764 CommonDBTM->canEdit()
+  ...tes/78/783323c9e7302dd474c5fad1127b2a1f.php:132 Twig\Extension\CoreExtension::getAttribute()
+  vendor/twig/twig/src/Template.php:360              __TwigTemplate_1ab8c5cdddb74d0bd536d6a65c432456->doDisplay()
+  vendor/twig/twig/src/Template.php:335              Twig\Template->yield()
+  vendor/twig/twig/src/TemplateWrapper.php:38        Twig\Template->render()
+  .../twig/twig/src/Extension/CoreExtension.php:1435 Twig\TemplateWrapper->render()
+  ...tes/30/30fa02db7da934359ceef5d431f6f375.php:132 Twig\Extension\CoreExtension::include()
+  vendor/twig/twig/src/Template.php:360              __TwigTemplate_d967e35aff623eaa071430f3e132b15a->doDisplay()
+  vendor/twig/twig/src/Template.php:327              Twig\Template->yield()
+  vendor/twig/twig/src/TemplateWrapper.php:45        Twig\Template->display()
+  src/Application/View/TemplateRenderer.php:184      Twig\TemplateWrapper->display()
+  src/CommonDBTM.php:2861                            Glpi\Application\View\TemplateRenderer->display()
+  marketplace/actualtime/inc/config.class.php:94     CommonDBTM->showFormHeader()
+  marketplace/actualtime/inc/config.class.php:173    PluginActualtimeConfig::showConfigForm()
+  src/CommonGLPI.php:694                             PluginActualtimeConfig::displayTabContentForItem()
+  ajax/common.tabs.php:120                           CommonGLPI::displayStandardTab()
+  {"user":"2@fr-int-web1788.main-hosting.eu","mem_usage":"0.001\", 8.33Mio)"} 
+[2026-04-28 15:36:27] glpisqllog.ERROR: DBmysql::doQuery() in /home/u981745852/domains/suporteincv.com/public_html/src/DBmysql.php line 395
+  *** MySQL query error:
+  SQL: SHOW COLUMNS FROM `glpi_plugin_actualtime_configs`
+  Error: Table 'u981745852_incv.glpi_plugin_actualtime_configs' doesn't exist
+  Backtrace :
+  src/DBmysql.php:954                                DBmysql->doQuery()
+  src/CommonDBTM.php:618                             DBmysql->listFields()
+  src/CommonDBTM.php:3375                            CommonDBTM->getEmpty()
+  src/CommonDBTM.php:3390                            CommonDBTM->maybePrivate()
+  src/CommonDBTM.php:2944                            CommonDBTM->isPrivate()
+  src/CommonDBTM.php:2524                            CommonDBTM->can()
+  .../twig/twig/src/Extension/CoreExtension.php:1764 CommonDBTM->canEdit()
+  ...tes/78/783323c9e7302dd474c5fad1127b2a1f.php:132 Twig\Extension\CoreExtension::getAttribute()
+  vendor/twig/twig/src/Template.php:360              __TwigTemplate_1ab8c5cdddb74d0bd536d6a65c432456->doDisplay()
+  vendor/twig/twig/src/Template.php:335              Twig\Template->yield()
+  vendor/twig/twig/src/TemplateWrapper.php:38        Twig\Template->render()
+  .../twig/twig/src/Extension/CoreExtension.php:1435 Twig\TemplateWrapper->render()
+  ...tes/30/30fa02db7da934359ceef5d431f6f375.php:132 Twig\Extension\CoreExtension::include()
+  vendor/twig/twig/src/Template.php:360              __TwigTemplate_d967e35aff623eaa071430f3e132b15a->doDisplay()
+  vendor/twig/twig/src/Template.php:327              Twig\Template->yield()
+  vendor/twig/twig/src/TemplateWrapper.php:45        Twig\Template->display()
+  src/Application/View/TemplateRenderer.php:184      Twig\TemplateWrapper->display()
+  src/CommonDBTM.php:2861                            Glpi\Application\View\TemplateRenderer->display()
+  marketplace/actualtime/inc/config.class.php:94     CommonDBTM->showFormHeader()
+  marketplace/actualtime/inc/config.class.php:173    PluginActualtimeConfig::showConfigForm()
+  src/CommonGLPI.php:694                             PluginActualtimeConfig::displayTabContentForItem()
+  ajax/common.tabs.php:120                           CommonGLPI::displayStandardTab()
+  {"user":"2@fr-int-web1788.main-hosting.eu","mem_usage":"0.001\", 8.33Mio)"} 
+[2026-04-28 15:36:27] glpisqllog.ERROR: DBmysql::doQuery() in /home/u981745852/domains/suporteincv.com/public_html/src/DBmysql.php line 395
+  *** MySQL query error:
+  SQL: SHOW COLUMNS FROM `glpi_plugin_actualtime_configs`
+  Error: Table 'u981745852_incv.glpi_plugin_actualtime_configs' doesn't exist
+  Backtrace :
+  src/DBmysql.php:954                                DBmysql->doQuery()
+  src/CommonDBTM.php:618                             DBmysql->listFields()
+  src/CommonDBTM.php:2927                            CommonDBTM->getEmpty()
+  src/CommonDBTM.php:2525                            CommonDBTM->can()
+  .../twig/twig/src/Extension/CoreExtension.php:1764 CommonDBTM->canEdit()
+  ...tes/78/783323c9e7302dd474c5fad1127b2a1f.php:132 Twig\Extension\CoreExtension::getAttribute()
+  vendor/twig/twig/src/Template.php:360              __TwigTemplate_1ab8c5cdddb74d0bd536d6a65c432456->doDisplay()
+  vendor/twig/twig/src/Template.php:335              Twig\Template->yield()
+  vendor/twig/twig/src/TemplateWrapper.php:38        Twig\Template->render()
+  .../twig/twig/src/Extension/CoreExtension.php:1435 Twig\TemplateWrapper->render()
+  ...tes/30/30fa02db7da934359ceef5d431f6f375.php:132 Twig\Extension\CoreExtension::include()
+  vendor/twig/twig/src/Template.php:360              __TwigTemplate_d967e35aff623eaa071430f3e132b15a->doDisplay()
+  vendor/twig/twig/src/Template.php:327              Twig\Template->yield()
+  vendor/twig/twig/src/TemplateWrapper.php:45        Twig\Template->display()
+  src/Application/View/TemplateRenderer.php:184      Twig\TemplateWrapper->display()
+  src/CommonDBTM.php:2861                            Glpi\Application\View\TemplateRenderer->display()
+  marketplace/actualtime/inc/config.class.php:94     CommonDBTM->showFormHeader()
+  marketplace/actualtime/inc/config.class.php:173    PluginActualtimeConfig::showConfigForm()
+  src/CommonGLPI.php:694                             PluginActualtimeConfig::displayTabContentForItem()
+  ajax/common.tabs.php:120                           CommonGLPI::displayStandardTab()
+  {"user":"2@fr-int-web1788.main-hosting.eu","mem_usage":"0.001\", 8.33Mio)"} 
+[2026-04-28 15:36:27] glpisqllog.ERROR: DBmysql::doQuery() in /home/u981745852/domains/suporteincv.com/public_html/src/DBmysql.php line 395
+  *** MySQL query error:
+  SQL: SHOW COLUMNS FROM `glpi_plugin_actualtime_configs`
+  Error: Table 'u981745852_incv.glpi_plugin_actualtime_configs' doesn't exist
+  Backtrace :
+  src/DBmysql.php:954                                DBmysql->doQuery()
+  src/CommonDBTM.php:618                             DBmysql->listFields()
+  src/CommonDBTM.php:3375                            CommonDBTM->getEmpty()
+  src/CommonDBTM.php:3390                            CommonDBTM->maybePrivate()
+  src/CommonDBTM.php:2944                            CommonDBTM->isPrivate()
+  src/CommonDBTM.php:2525                            CommonDBTM->can()
+  .../twig/twig/src/Extension/CoreExtension.php:1764 CommonDBTM->canEdit()
+  ...tes/78/783323c9e7302dd474c5fad1127b2a1f.php:132 Twig\Extension\CoreExtension::getAttribute()
+  vendor/twig/twig/src/Template.php:360              __TwigTemplate_1ab8c5cdddb74d0bd536d6a65c432456->doDisplay()
+  vendor/twig/twig/src/Template.php:335              Twig\Template->yield()
+  vendor/twig/twig/src/TemplateWrapper.php:38        Twig\Template->render()
+  .../twig/twig/src/Extension/CoreExtension.php:1435 Twig\TemplateWrapper->render()
+  ...tes/30/30fa02db7da934359ceef5d431f6f375.php:132 Twig\Extension\CoreExtension::include()
+  vendor/twig/twig/src/Template.php:360              __TwigTemplate_d967e35aff623eaa071430f3e132b15a->doDisplay()
+  vendor/twig/twig/src/Template.php:327              Twig\Template->yield()
+  vendor/twig/twig/src/TemplateWrapper.php:45        Twig\Template->display()
+  src/Application/View/TemplateRenderer.php:184      Twig\TemplateWrapper->display()
+  src/CommonDBTM.php:2861                            Glpi\Application\View\TemplateRenderer->display()
+  marketplace/actualtime/inc/config.class.php:94     CommonDBTM->showFormHeader()
+  marketplace/actualtime/inc/config.class.php:173    PluginActualtimeConfig::showConfigForm()
+  src/CommonGLPI.php:694                             PluginActualtimeConfig::displayTabContentForItem()
+  ajax/common.tabs.php:120                           CommonGLPI::displayStandardTab()
+  {"user":"2@fr-int-web1788.main-hosting.eu","mem_usage":"0.001\", 8.33Mio)"} 
+[2026-04-28 15:36:27] glpisqllog.ERROR: DBmysql::doQuery() in /home/u981745852/domains/suporteincv.com/public_html/src/DBmysql.php line 395
+  *** MySQL query error:
+  SQL: SHOW COLUMNS FROM `glpi_plugin_actualtime_configs`
+  Error: Table 'u981745852_incv.glpi_plugin_actualtime_configs' doesn't exist
+  Backtrace :
+  src/DBmysql.php:954                                DBmysql->doQuery()
+  src/CommonDBTM.php:618                             DBmysql->listFields()
+  src/CommonDBTM.php:2927                            CommonDBTM->getEmpty()
+  src/CommonDBTM.php:2526                            CommonDBTM->can()
+  .../twig/twig/src/Extension/CoreExtension.php:1764 CommonDBTM->canEdit()
+  ...tes/78/783323c9e7302dd474c5fad1127b2a1f.php:132 Twig\Extension\CoreExtension::getAttribute()
+  vendor/twig/twig/src/Template.php:360              __TwigTemplate_1ab8c5cdddb74d0bd536d6a65c432456->doDisplay()
+  vendor/twig/twig/src/Template.php:335              Twig\Template->yield()
+  vendor/twig/twig/src/TemplateWrapper.php:38        Twig\Template->render()
+  .../twig/twig/src/Extension/CoreExtension.php:1435 Twig\TemplateWrapper->render()
+  ...tes/30/30fa02db7da934359ceef5d431f6f375.php:132 Twig\Extension\CoreExtension::include()
+  vendor/twig/twig/src/Template.php:360              __TwigTemplate_d967e35aff623eaa071430f3e132b15a->doDisplay()
+  vendor/twig/twig/src/Template.php:327              Twig\Template->yield()
+  vendor/twig/twig/src/TemplateWrapper.php:45        Twig\Template->display()
+  src/Application/View/TemplateRenderer.php:184      Twig\TemplateWrapper->display()
+  src/CommonDBTM.php:2861                            Glpi\Application\View\TemplateRenderer->display()
+  marketplace/actualtime/inc/config.class.php:94     CommonDBTM->showFormHeader()
+  marketplace/actualtime/inc/config.class.php:173    PluginActualtimeConfig::showConfigForm()
+  src/CommonGLPI.php:694                             PluginActualtimeConfig::displayTabContentForItem()
+  ajax/common.tabs.php:120                           CommonGLPI::displayStandardTab()
+  {"user":"2@fr-int-web1788.main-hosting.eu","mem_usage":"0.000\", 8.33Mio)"} 
+[2026-04-28 15:36:27] glpisqllog.ERROR: DBmysql::doQuery() in /home/u981745852/domains/suporteincv.com/public_html/src/DBmysql.php line 395
+  *** MySQL query error:
+  SQL: SHOW COLUMNS FROM `glpi_plugin_actualtime_configs`
+  Error: Table 'u981745852_incv.glpi_plugin_actualtime_configs' doesn't exist
+  Backtrace :
+  src/DBmysql.php:954                                DBmysql->doQuery()
+  src/CommonDBTM.php:618                             DBmysql->listFields()
+  src/CommonDBTM.php:3375                            CommonDBTM->getEmpty()
+  src/CommonDBTM.php:3390                            CommonDBTM->maybePrivate()
+  src/CommonDBTM.php:2944                            CommonDBTM->isPrivate()
+  src/CommonDBTM.php:2526                            CommonDBTM->can()
+  .../twig/twig/src/Extension/CoreExtension.php:1764 CommonDBTM->canEdit()
+  ...tes/78/783323c9e7302dd474c5fad1127b2a1f.php:132 Twig\Extension\CoreExtension::getAttribute()
+  vendor/twig/twig/src/Template.php:360              __TwigTemplate_1ab8c5cdddb74d0bd536d6a65c432456->doDisplay()
+  vendor/twig/twig/src/Template.php:335              Twig\Template->yield()
+  vendor/twig/twig/src/TemplateWrapper.php:38        Twig\Template->render()
+  .../twig/twig/src/Extension/CoreExtension.php:1435 Twig\TemplateWrapper->render()
+  ...tes/30/30fa02db7da934359ceef5d431f6f375.php:132 Twig\Extension\CoreExtension::include()
+  vendor/twig/twig/src/Template.php:360              __TwigTemplate_d967e35aff623eaa071430f3e132b15a->doDisplay()
+  vendor/twig/twig/src/Template.php:327              Twig\Template->yield()
+  vendor/twig/twig/src/TemplateWrapper.php:45        Twig\Template->display()
+  src/Application/View/TemplateRenderer.php:184      Twig\TemplateWrapper->display()
+  src/CommonDBTM.php:2861                            Glpi\Application\View\TemplateRenderer->display()
+  marketplace/actualtime/inc/config.class.php:94     CommonDBTM->showFormHeader()
+  marketplace/actualtime/inc/config.class.php:173    PluginActualtimeConfig::showConfigForm()
+  src/CommonGLPI.php:694                             PluginActualtimeConfig::displayTabContentForItem()
+  ajax/common.tabs.php:120                           CommonGLPI::displayStandardTab()
+  {"user":"2@fr-int-web1788.main-hosting.eu","mem_usage":"0.001\", 8.33Mio)"} 
+[2026-04-28 15:36:27] glpisqllog.ERROR: DBmysql::doQuery() in /home/u981745852/domains/suporteincv.com/public_html/src/DBmysql.php line 395
+  *** MySQL query error:
+  SQL: SHOW COLUMNS FROM `glpi_plugin_actualtime_configs`
+  Error: Table 'u981745852_incv.glpi_plugin_actualtime_configs' doesn't exist
+  Backtrace :
+  src/DBmysql.php:954                                DBmysql->doQuery()
+  src/CommonDBTM.php:618                             DBmysql->listFields()
+  src/CommonDBTM.php:3180                            CommonDBTM->getEmpty()
+  .../twig/twig/src/Extension/CoreExtension.php:1764 CommonDBTM->isEntityAssign()
+  ...tes/78/783323c9e7302dd474c5fad1127b2a1f.php:312 Twig\Extension\CoreExtension::getAttribute()
+  vendor/twig/twig/src/Template.php:360              __TwigTemplate_1ab8c5cdddb74d0bd536d6a65c432456->doDisplay()
+  vendor/twig/twig/src/Template.php:335              Twig\Template->yield()
+  vendor/twig/twig/src/TemplateWrapper.php:38        Twig\Template->render()
+  .../twig/twig/src/Extension/CoreExtension.php:1435 Twig\TemplateWrapper->render()
+  ...tes/30/30fa02db7da934359ceef5d431f6f375.php:132 Twig\Extension\CoreExtension::include()
+  vendor/twig/twig/src/Template.php:360              __TwigTemplate_d967e35aff623eaa071430f3e132b15a->doDisplay()
+  vendor/twig/twig/src/Template.php:327              Twig\Template->yield()
+  vendor/twig/twig/src/TemplateWrapper.php:45        Twig\Template->display()
+  src/Application/View/TemplateRenderer.php:184      Twig\TemplateWrapper->display()
+  src/CommonDBTM.php:2861                            Glpi\Application\View\TemplateRenderer->display()
+  marketplace/actualtime/inc/config.class.php:94     CommonDBTM->showFormHeader()
+  marketplace/actualtime/inc/config.class.php:173    PluginActualtimeConfig::showConfigForm()
+  src/CommonGLPI.php:694                             PluginActualtimeConfig::displayTabContentForItem()
+  ajax/common.tabs.php:120                           CommonGLPI::displayStandardTab()
+  {"user":"2@fr-int-web1788.main-hosting.eu","mem_usage":"0.001\", 8.33Mio)"} 
+[2026-04-28 15:36:34] glpisqllog.ERROR: DBmysql::doQuery() in /home/u981745852/domains/suporteincv.com/public_html/src/DBmysql.php line 395
+  *** MySQL query error:
+  SQL: SELECT * FROM `glpi_plugin_actualtime_configs` WHERE `glpi_plugin_actualtime_configs`.`id` = '1' LIMIT 1
+  Error: Table 'u981745852_incv.glpi_plugin_actualtime_configs' doesn't exist
+  Backtrace :
+  src/DBmysqlIterator.php:112                        DBmysql->doQuery()
+  src/DBmysql.php:1105                               DBmysqlIterator->execute()
+  src/CommonDBTM.php:304                             DBmysql->request()
+  marketplace/actualtime/inc/config.class.php:92     CommonDBTM->getFromDB()
+  marketplace/actualtime/inc/config.class.php:173    PluginActualtimeConfig::showConfigForm()
+  src/CommonGLPI.php:694                             PluginActualtimeConfig::displayTabContentForItem()
+  src/CommonGLPI.php:656                             CommonGLPI::displayStandardTab()
+  ajax/common.tabs.php:120                           CommonGLPI::displayStandardTab()
+  {"user":"2@fr-int-web1788.main-hosting.eu"} 
+[2026-04-28 15:36:34] glpisqllog.ERROR: DBmysql::doQuery() in /home/u981745852/domains/suporteincv.com/public_html/src/DBmysql.php line 395
+  *** MySQL query error:
+  SQL: SHOW COLUMNS FROM `glpi_plugin_actualtime_configs`
+  Error: Table 'u981745852_incv.glpi_plugin_actualtime_configs' doesn't exist
+  Backtrace :
+  src/DBmysql.php:954                                DBmysql->doQuery()
+  src/CommonDBTM.php:618                             DBmysql->listFields()
+  src/CommonDBTM.php:3180                            CommonDBTM->getEmpty()
+  .../twig/twig/src/Extension/CoreExtension.php:1764 CommonDBTM->isEntityAssign()
+  ...ates/30/30fa02db7da934359ceef5d431f6f375.php:60 Twig\Extension\CoreExtension::getAttribute()
+  vendor/twig/twig/src/Template.php:360              __TwigTemplate_d967e35aff623eaa071430f3e132b15a->doDisplay()
+  vendor/twig/twig/src/Template.php:327              Twig\Template->yield()
+  vendor/twig/twig/src/TemplateWrapper.php:45        Twig\Template->display()
+  src/Application/View/TemplateRenderer.php:184      Twig\TemplateWrapper->display()
+  src/CommonDBTM.php:2861                            Glpi\Application\View\TemplateRenderer->display()
+  marketplace/actualtime/inc/config.class.php:94     CommonDBTM->showFormHeader()
+  marketplace/actualtime/inc/config.class.php:173    PluginActualtimeConfig::showConfigForm()
+  src/CommonGLPI.php:694                             PluginActualtimeConfig::displayTabContentForItem()
+  src/CommonGLPI.php:656                             CommonGLPI::displayStandardTab()
+  ajax/common.tabs.php:120                           CommonGLPI::displayStandardTab()
+  {"user":"2@fr-int-web1788.main-hosting.eu","mem_usage":"0.001\", 21.70Mio)"} 
+[2026-04-28 15:36:34] glpisqllog.ERROR: DBmysql::doQuery() in /home/u981745852/domains/suporteincv.com/public_html/src/DBmysql.php line 395
+  *** MySQL query error:
+  SQL: SHOW COLUMNS FROM `glpi_plugin_actualtime_configs`
+  Error: Table 'u981745852_incv.glpi_plugin_actualtime_configs' doesn't exist
+  Backtrace :
+  src/DBmysql.php:954                                DBmysql->doQuery()
+  src/CommonDBTM.php:618                             DBmysql->listFields()
+  src/CommonDBTM.php:3230                            CommonDBTM->getEmpty()
+  src/CommonDBTM.php:2518                            CommonDBTM->maybeDeleted()
+  .../twig/twig/src/Extension/CoreExtension.php:1764 CommonDBTM->canEdit()
+  ...tes/30/30fa02db7da934359ceef5d431f6f375.php:101 Twig\Extension\CoreExtension::getAttribute()
+  vendor/twig/twig/src/Template.php:360              __TwigTemplate_d967e35aff623eaa071430f3e132b15a->doDisplay()
+  vendor/twig/twig/src/Template.php:327              Twig\Template->yield()
+  vendor/twig/twig/src/TemplateWrapper.php:45        Twig\Template->display()
+  src/Application/View/TemplateRenderer.php:184      Twig\TemplateWrapper->display()
+  src/CommonDBTM.php:2861                            Glpi\Application\View\TemplateRenderer->display()
+  marketplace/actualtime/inc/config.class.php:94     CommonDBTM->showFormHeader()
+  marketplace/actualtime/inc/config.class.php:173    PluginActualtimeConfig::showConfigForm()
+  src/CommonGLPI.php:694                             PluginActualtimeConfig::displayTabContentForItem()
+  src/CommonGLPI.php:656                             CommonGLPI::displayStandardTab()
+  ajax/common.tabs.php:120                           CommonGLPI::displayStandardTab()
+  {"user":"2@fr-int-web1788.main-hosting.eu","mem_usage":"0.001\", 21.71Mio)"} 
+[2026-04-28 15:36:34] glpisqllog.ERROR: DBmysql::doQuery() in /home/u981745852/domains/suporteincv.com/public_html/src/DBmysql.php line 395
+  *** MySQL query error:
+  SQL: SHOW COLUMNS FROM `glpi_plugin_actualtime_configs`
+  Error: Table 'u981745852_incv.glpi_plugin_actualtime_configs' doesn't exist
+  Backtrace :
+  src/DBmysql.php:954                                DBmysql->doQuery()
+  src/CommonDBTM.php:618                             DBmysql->listFields()
+  src/CommonDBTM.php:2927                            CommonDBTM->getEmpty()
+  src/CommonDBTM.php:2524                            CommonDBTM->can()
+  .../twig/twig/src/Extension/CoreExtension.php:1764 CommonDBTM->canEdit()
+  ...tes/30/30fa02db7da934359ceef5d431f6f375.php:101 Twig\Extension\CoreExtension::getAttribute()
+  vendor/twig/twig/src/Template.php:360              __TwigTemplate_d967e35aff623eaa071430f3e132b15a->doDisplay()
+  vendor/twig/twig/src/Template.php:327              Twig\Template->yield()
+  vendor/twig/twig/src/TemplateWrapper.php:45        Twig\Template->display()
+  src/Application/View/TemplateRenderer.php:184      Twig\TemplateWrapper->display()
+  src/CommonDBTM.php:2861                            Glpi\Application\View\TemplateRenderer->display()
+  marketplace/actualtime/inc/config.class.php:94     CommonDBTM->showFormHeader()
+  marketplace/actualtime/inc/config.class.php:173    PluginActualtimeConfig::showConfigForm()
+  src/CommonGLPI.php:694                             PluginActualtimeConfig::displayTabContentForItem()
+  src/CommonGLPI.php:656                             CommonGLPI::displayStandardTab()
+  ajax/common.tabs.php:120                           CommonGLPI::displayStandardTab()
+  {"user":"2@fr-int-web1788.main-hosting.eu","mem_usage":"0.001\", 21.71Mio)"} 
+[2026-04-28 15:36:34] glpisqllog.ERROR: DBmysql::doQuery() in /home/u981745852/domains/suporteincv.com/public_html/src/DBmysql.php line 395
+  *** MySQL query error:
+  SQL: SHOW COLUMNS FROM `glpi_plugin_actualtime_configs`
+  Error: Table 'u981745852_incv.glpi_plugin_actualtime_configs' doesn't exist
+  Backtrace :
+  src/DBmysql.php:954                                DBmysql->doQuery()
+  src/CommonDBTM.php:618                             DBmysql->listFields()
+  src/CommonDBTM.php:3375                            CommonDBTM->getEmpty()
+  src/CommonDBTM.php:3390                            CommonDBTM->maybePrivate()
+  src/CommonDBTM.php:2944                            CommonDBTM->isPrivate()
+  src/CommonDBTM.php:2524                            CommonDBTM->can()
+  .../twig/twig/src/Extension/CoreExtension.php:1764 CommonDBTM->canEdit()
+  ...tes/30/30fa02db7da934359ceef5d431f6f375.php:101 Twig\Extension\CoreExtension::getAttribute()
+  vendor/twig/twig/src/Template.php:360              __TwigTemplate_d967e35aff623eaa071430f3e132b15a->doDisplay()
+  vendor/twig/twig/src/Template.php:327              Twig\Template->yield()
+  vendor/twig/twig/src/TemplateWrapper.php:45        Twig\Template->display()
+  src/Application/View/TemplateRenderer.php:184      Twig\TemplateWrapper->display()
+  src/CommonDBTM.php:2861                            Glpi\Application\View\TemplateRenderer->display()
+  marketplace/actualtime/inc/config.class.php:94     CommonDBTM->showFormHeader()
+  marketplace/actualtime/inc/config.class.php:173    PluginActualtimeConfig::showConfigForm()
+  src/CommonGLPI.php:694                             PluginActualtimeConfig::displayTabContentForItem()
+  src/CommonGLPI.php:656                             CommonGLPI::displayStandardTab()
+  ajax/common.tabs.php:120                           CommonGLPI::displayStandardTab()
+  {"user":"2@fr-int-web1788.main-hosting.eu","mem_usage":"0.001\", 21.71Mio)"} 
+[2026-04-28 15:36:34] glpisqllog.ERROR: DBmysql::doQuery() in /home/u981745852/domains/suporteincv.com/public_html/src/DBmysql.php line 395
+  *** MySQL query error:
+  SQL: SHOW COLUMNS FROM `glpi_plugin_actualtime_configs`
+  Error: Table 'u981745852_incv.glpi_plugin_actualtime_configs' doesn't exist
+  Backtrace :
+  src/DBmysql.php:954                                DBmysql->doQuery()
+  src/CommonDBTM.php:618                             DBmysql->listFields()
+  src/CommonDBTM.php:2927                            CommonDBTM->getEmpty()
+  src/CommonDBTM.php:2525                            CommonDBTM->can()
+  .../twig/twig/src/Extension/CoreExtension.php:1764 CommonDBTM->canEdit()
+  ...tes/30/30fa02db7da934359ceef5d431f6f375.php:101 Twig\Extension\CoreExtension::getAttribute()
+  vendor/twig/twig/src/Template.php:360              __TwigTemplate_d967e35aff623eaa071430f3e132b15a->doDisplay()
+  vendor/twig/twig/src/Template.php:327              Twig\Template->yield()
+  vendor/twig/twig/src/TemplateWrapper.php:45        Twig\Template->display()
+  src/Application/View/TemplateRenderer.php:184      Twig\TemplateWrapper->display()
+  src/CommonDBTM.php:2861                            Glpi\Application\View\TemplateRenderer->display()
+  marketplace/actualtime/inc/config.class.php:94     CommonDBTM->showFormHeader()
+  marketplace/actualtime/inc/config.class.php:173    PluginActualtimeConfig::showConfigForm()
+  src/CommonGLPI.php:694                             PluginActualtimeConfig::displayTabContentForItem()
+  src/CommonGLPI.php:656                             CommonGLPI::displayStandardTab()
+  ajax/common.tabs.php:120                           CommonGLPI::displayStandardTab()
+  {"user":"2@fr-int-web1788.main-hosting.eu","mem_usage":"0.001\", 21.71Mio)"} 
+[2026-04-28 15:36:34] glpisqllog.ERROR: DBmysql::doQuery() in /home/u981745852/domains/suporteincv.com/public_html/src/DBmysql.php line 395
+  *** MySQL query error:
+  SQL: SHOW COLUMNS FROM `glpi_plugin_actualtime_configs`
+  Error: Table 'u981745852_incv.glpi_plugin_actualtime_configs' doesn't exist
+  Backtrace :
+  src/DBmysql.php:954                                DBmysql->doQuery()
+  src/CommonDBTM.php:618                             DBmysql->listFields()
+  src/CommonDBTM.php:3375                            CommonDBTM->getEmpty()
+  src/CommonDBTM.php:3390                            CommonDBTM->maybePrivate()
+  src/CommonDBTM.php:2944                            CommonDBTM->isPrivate()
+  src/CommonDBTM.php:2525                            CommonDBTM->can()
+  .../twig/twig/src/Extension/CoreExtension.php:1764 CommonDBTM->canEdit()
+  ...tes/30/30fa02db7da934359ceef5d431f6f375.php:101 Twig\Extension\CoreExtension::getAttribute()
+  vendor/twig/twig/src/Template.php:360              __TwigTemplate_d967e35aff623eaa071430f3e132b15a->doDisplay()
+  vendor/twig/twig/src/Template.php:327              Twig\Template->yield()
+  vendor/twig/twig/src/TemplateWrapper.php:45        Twig\Template->display()
+  src/Application/View/TemplateRenderer.php:184      Twig\TemplateWrapper->display()
+  src/CommonDBTM.php:2861                            Glpi\Application\View\TemplateRenderer->display()
+  marketplace/actualtime/inc/config.class.php:94     CommonDBTM->showFormHeader()
+  marketplace/actualtime/inc/config.class.php:173    PluginActualtimeConfig::showConfigForm()
+  src/CommonGLPI.php:694                             PluginActualtimeConfig::displayTabContentForItem()
+  src/CommonGLPI.php:656                             CommonGLPI::displayStandardTab()
+  ajax/common.tabs.php:120                           CommonGLPI::displayStandardTab()
+  {"user":"2@fr-int-web1788.main-hosting.eu","mem_usage":"0.001\", 21.71Mio)"} 
+[2026-04-28 15:36:34] glpisqllog.ERROR: DBmysql::doQuery() in /home/u981745852/domains/suporteincv.com/public_html/src/DBmysql.php line 395
+  *** MySQL query error:
+  SQL: SHOW COLUMNS FROM `glpi_plugin_actualtime_configs`
+  Error: Table 'u981745852_incv.glpi_plugin_actualtime_configs' doesn't exist
+  Backtrace :
+  src/DBmysql.php:954                                DBmysql->doQuery()
+  src/CommonDBTM.php:618                             DBmysql->listFields()
+  src/CommonDBTM.php:2927                            CommonDBTM->getEmpty()
+  src/CommonDBTM.php:2526                            CommonDBTM->can()
+  .../twig/twig/src/Extension/CoreExtension.php:1764 CommonDBTM->canEdit()
+  ...tes/30/30fa02db7da934359ceef5d431f6f375.php:101 Twig\Extension\CoreExtension::getAttribute()
+  vendor/twig/twig/src/Template.php:360              __TwigTemplate_d967e35aff623eaa071430f3e132b15a->doDisplay()
+  vendor/twig/twig/src/Template.php:327              Twig\Template->yield()
+  vendor/twig/twig/src/TemplateWrapper.php:45        Twig\Template->display()
+  src/Application/View/TemplateRenderer.php:184      Twig\TemplateWrapper->display()
+  src/CommonDBTM.php:2861                            Glpi\Application\View\TemplateRenderer->display()
+  marketplace/actualtime/inc/config.class.php:94     CommonDBTM->showFormHeader()
+  marketplace/actualtime/inc/config.class.php:173    PluginActualtimeConfig::showConfigForm()
+  src/CommonGLPI.php:694                             PluginActualtimeConfig::displayTabContentForItem()
+  src/CommonGLPI.php:656                             CommonGLPI::displayStandardTab()
+  ajax/common.tabs.php:120                           CommonGLPI::displayStandardTab()
+  {"user":"2@fr-int-web1788.main-hosting.eu","mem_usage":"0.001\", 21.71Mio)"} 
+[2026-04-28 15:36:34] glpisqllog.ERROR: DBmysql::doQuery() in /home/u981745852/domains/suporteincv.com/public_html/src/DBmysql.php line 395
+  *** MySQL query error:
+  SQL: SHOW COLUMNS FROM `glpi_plugin_actualtime_configs`
+  Error: Table 'u981745852_incv.glpi_plugin_actualtime_configs' doesn't exist
+  Backtrace :
+  src/DBmysql.php:954                                DBmysql->doQuery()
+  src/CommonDBTM.php:618                             DBmysql->listFields()
+  src/CommonDBTM.php:3375                            CommonDBTM->getEmpty()
+  src/CommonDBTM.php:3390                            CommonDBTM->maybePrivate()
+  src/CommonDBTM.php:2944                            CommonDBTM->isPrivate()
+  src/CommonDBTM.php:2526                            CommonDBTM->can()
+  .../twig/twig/src/Extension/CoreExtension.php:1764 CommonDBTM->canEdit()
+  ...tes/30/30fa02db7da934359ceef5d431f6f375.php:101 Twig\Extension\CoreExtension::getAttribute()
+  vendor/twig/twig/src/Template.php:360              __TwigTemplate_d967e35aff623eaa071430f3e132b15a->doDisplay()
+  vendor/twig/twig/src/Template.php:327              Twig\Template->yield()
+  vendor/twig/twig/src/TemplateWrapper.php:45        Twig\Template->display()
+  src/Application/View/TemplateRenderer.php:184      Twig\TemplateWrapper->display()
+  src/CommonDBTM.php:2861                            Glpi\Application\View\TemplateRenderer->display()
+  marketplace/actualtime/inc/config.class.php:94     CommonDBTM->showFormHeader()
+  marketplace/actualtime/inc/config.class.php:173    PluginActualtimeConfig::showConfigForm()
+  src/CommonGLPI.php:694                             PluginActualtimeConfig::displayTabContentForItem()
+  src/CommonGLPI.php:656                             CommonGLPI::displayStandardTab()
+  ajax/common.tabs.php:120                           CommonGLPI::displayStandardTab()
+  {"user":"2@fr-int-web1788.main-hosting.eu","mem_usage":"0.001\", 21.71Mio)"} 
+[2026-04-28 15:36:34] glpisqllog.ERROR: DBmysql::doQuery() in /home/u981745852/domains/suporteincv.com/public_html/src/DBmysql.php line 395
+  *** MySQL query error:
+  SQL: SHOW COLUMNS FROM `glpi_plugin_actualtime_configs`
+  Error: Table 'u981745852_incv.glpi_plugin_actualtime_configs' doesn't exist
+  Backtrace :
+  src/DBmysql.php:954                                DBmysql->doQuery()
+  src/CommonDBTM.php:618                             DBmysql->listFields()
+  src/CommonDBTM.php:3230                            CommonDBTM->getEmpty()
+  src/CommonDBTM.php:2518                            CommonDBTM->maybeDeleted()
+  .../twig/twig/src/Extension/CoreExtension.php:1764 CommonDBTM->canEdit()
+  ...tes/78/783323c9e7302dd474c5fad1127b2a1f.php:132 Twig\Extension\CoreExtension::getAttribute()
+  vendor/twig/twig/src/Template.php:360              __TwigTemplate_1ab8c5cdddb74d0bd536d6a65c432456->doDisplay()
+  vendor/twig/twig/src/Template.php:335              Twig\Template->yield()
+  vendor/twig/twig/src/TemplateWrapper.php:38        Twig\Template->render()
+  .../twig/twig/src/Extension/CoreExtension.php:1435 Twig\TemplateWrapper->render()
+  ...tes/30/30fa02db7da934359ceef5d431f6f375.php:132 Twig\Extension\CoreExtension::include()
+  vendor/twig/twig/src/Template.php:360              __TwigTemplate_d967e35aff623eaa071430f3e132b15a->doDisplay()
+  vendor/twig/twig/src/Template.php:327              Twig\Template->yield()
+  vendor/twig/twig/src/TemplateWrapper.php:45        Twig\Template->display()
+  src/Application/View/TemplateRenderer.php:184      Twig\TemplateWrapper->display()
+  src/CommonDBTM.php:2861                            Glpi\Application\View\TemplateRenderer->display()
+  marketplace/actualtime/inc/config.class.php:94     CommonDBTM->showFormHeader()
+  marketplace/actualtime/inc/config.class.php:173    PluginActualtimeConfig::showConfigForm()
+  src/CommonGLPI.php:694                             PluginActualtimeConfig::displayTabContentForItem()
+  src/CommonGLPI.php:656                             CommonGLPI::displayStandardTab()
+  ajax/common.tabs.php:120                           CommonGLPI::displayStandardTab()
+  {"user":"2@fr-int-web1788.main-hosting.eu","mem_usage":"0.001\", 21.73Mio)"} 
+[2026-04-28 15:36:34] glpisqllog.ERROR: DBmysql::doQuery() in /home/u981745852/domains/suporteincv.com/public_html/src/DBmysql.php line 395
+  *** MySQL query error:
+  SQL: SHOW COLUMNS FROM `glpi_plugin_actualtime_configs`
+  Error: Table 'u981745852_incv.glpi_plugin_actualtime_configs' doesn't exist
+  Backtrace :
+  src/DBmysql.php:954                                DBmysql->doQuery()
+  src/CommonDBTM.php:618                             DBmysql->listFields()
+  src/CommonDBTM.php:2927                            CommonDBTM->getEmpty()
+  src/CommonDBTM.php:2524                            CommonDBTM->can()
+  .../twig/twig/src/Extension/CoreExtension.php:1764 CommonDBTM->canEdit()
+  ...tes/78/783323c9e7302dd474c5fad1127b2a1f.php:132 Twig\Extension\CoreExtension::getAttribute()
+  vendor/twig/twig/src/Template.php:360              __TwigTemplate_1ab8c5cdddb74d0bd536d6a65c432456->doDisplay()
+  vendor/twig/twig/src/Template.php:335              Twig\Template->yield()
+  vendor/twig/twig/src/TemplateWrapper.php:38        Twig\Template->render()
+  .../twig/twig/src/Extension/CoreExtension.php:1435 Twig\TemplateWrapper->render()
+  ...tes/30/30fa02db7da934359ceef5d431f6f375.php:132 Twig\Extension\CoreExtension::include()
+  vendor/twig/twig/src/Template.php:360              __TwigTemplate_d967e35aff623eaa071430f3e132b15a->doDisplay()
+  vendor/twig/twig/src/Template.php:327              Twig\Template->yield()
+  vendor/twig/twig/src/TemplateWrapper.php:45        Twig\Template->display()
+  src/Application/View/TemplateRenderer.php:184      Twig\TemplateWrapper->display()
+  src/CommonDBTM.php:2861                            Glpi\Application\View\TemplateRenderer->display()
+  marketplace/actualtime/inc/config.class.php:94     CommonDBTM->showFormHeader()
+  marketplace/actualtime/inc/config.class.php:173    PluginActualtimeConfig::showConfigForm()
+  src/CommonGLPI.php:694                             PluginActualtimeConfig::displayTabContentForItem()
+  src/CommonGLPI.php:656                             CommonGLPI::displayStandardTab()
+  ajax/common.tabs.php:120                           CommonGLPI::displayStandardTab()
+  {"user":"2@fr-int-web1788.main-hosting.eu","mem_usage":"0.001\", 21.73Mio)"} 
+[2026-04-28 15:36:34] glpisqllog.ERROR: DBmysql::doQuery() in /home/u981745852/domains/suporteincv.com/public_html/src/DBmysql.php line 395
+  *** MySQL query error:
+  SQL: SHOW COLUMNS FROM `glpi_plugin_actualtime_configs`
+  Error: Table 'u981745852_incv.glpi_plugin_actualtime_configs' doesn't exist
+  Backtrace :
+  src/DBmysql.php:954                                DBmysql->doQuery()
+  src/CommonDBTM.php:618                             DBmysql->listFields()
+  src/CommonDBTM.php:3375                            CommonDBTM->getEmpty()
+  src/CommonDBTM.php:3390                            CommonDBTM->maybePrivate()
+  src/CommonDBTM.php:2944                            CommonDBTM->isPrivate()
+  src/CommonDBTM.php:2524                            CommonDBTM->can()
+  .../twig/twig/src/Extension/CoreExtension.php:1764 CommonDBTM->canEdit()
+  ...tes/78/783323c9e7302dd474c5fad1127b2a1f.php:132 Twig\Extension\CoreExtension::getAttribute()
+  vendor/twig/twig/src/Template.php:360              __TwigTemplate_1ab8c5cdddb74d0bd536d6a65c432456->doDisplay()
+  vendor/twig/twig/src/Template.php:335              Twig\Template->yield()
+  vendor/twig/twig/src/TemplateWrapper.php:38        Twig\Template->render()
+  .../twig/twig/src/Extension/CoreExtension.php:1435 Twig\TemplateWrapper->render()
+  ...tes/30/30fa02db7da934359ceef5d431f6f375.php:132 Twig\Extension\CoreExtension::include()
+  vendor/twig/twig/src/Template.php:360              __TwigTemplate_d967e35aff623eaa071430f3e132b15a->doDisplay()
+  vendor/twig/twig/src/Template.php:327              Twig\Template->yield()
+  vendor/twig/twig/src/TemplateWrapper.php:45        Twig\Template->display()
+  src/Application/View/TemplateRenderer.php:184      Twig\TemplateWrapper->display()
+  src/CommonDBTM.php:2861                            Glpi\Application\View\TemplateRenderer->display()
+  marketplace/actualtime/inc/config.class.php:94     CommonDBTM->showFormHeader()
+  marketplace/actualtime/inc/config.class.php:173    PluginActualtimeConfig::showConfigForm()
+  src/CommonGLPI.php:694                             PluginActualtimeConfig::displayTabContentForItem()
+  src/CommonGLPI.php:656                             CommonGLPI::displayStandardTab()
+  ajax/common.tabs.php:120                           CommonGLPI::displayStandardTab()
+  {"user":"2@fr-int-web1788.main-hosting.eu","mem_usage":"0.001\", 21.73Mio)"} 
+[2026-04-28 15:36:34] glpisqllog.ERROR: DBmysql::doQuery() in /home/u981745852/domains/suporteincv.com/public_html/src/DBmysql.php line 395
+  *** MySQL query error:
+  SQL: SHOW COLUMNS FROM `glpi_plugin_actualtime_configs`
+  Error: Table 'u981745852_incv.glpi_plugin_actualtime_configs' doesn't exist
+  Backtrace :
+  src/DBmysql.php:954                                DBmysql->doQuery()
+  src/CommonDBTM.php:618                             DBmysql->listFields()
+  src/CommonDBTM.php:2927                            CommonDBTM->getEmpty()
+  src/CommonDBTM.php:2525                            CommonDBTM->can()
+  .../twig/twig/src/Extension/CoreExtension.php:1764 CommonDBTM->canEdit()
+  ...tes/78/783323c9e7302dd474c5fad1127b2a1f.php:132 Twig\Extension\CoreExtension::getAttribute()
+  vendor/twig/twig/src/Template.php:360              __TwigTemplate_1ab8c5cdddb74d0bd536d6a65c432456->doDisplay()
+  vendor/twig/twig/src/Template.php:335              Twig\Template->yield()
+  vendor/twig/twig/src/TemplateWrapper.php:38        Twig\Template->render()
+  .../twig/twig/src/Extension/CoreExtension.php:1435 Twig\TemplateWrapper->render()
+  ...tes/30/30fa02db7da934359ceef5d431f6f375.php:132 Twig\Extension\CoreExtension::include()
+  vendor/twig/twig/src/Template.php:360              __TwigTemplate_d967e35aff623eaa071430f3e132b15a->doDisplay()
+  vendor/twig/twig/src/Template.php:327              Twig\Template->yield()
+  vendor/twig/twig/src/TemplateWrapper.php:45        Twig\Template->display()
+  src/Application/View/TemplateRenderer.php:184      Twig\TemplateWrapper->display()
+  src/CommonDBTM.php:2861                            Glpi\Application\View\TemplateRenderer->display()
+  marketplace/actualtime/inc/config.class.php:94     CommonDBTM->showFormHeader()
+  marketplace/actualtime/inc/config.class.php:173    PluginActualtimeConfig::showConfigForm()
+  src/CommonGLPI.php:694                             PluginActualtimeConfig::displayTabContentForItem()
+  src/CommonGLPI.php:656                             CommonGLPI::displayStandardTab()
+  ajax/common.tabs.php:120                           CommonGLPI::displayStandardTab()
+  {"user":"2@fr-int-web1788.main-hosting.eu","mem_usage":"0.001\", 21.73Mio)"} 
+[2026-04-28 15:36:34] glpisqllog.ERROR: DBmysql::doQuery() in /home/u981745852/domains/suporteincv.com/public_html/src/DBmysql.php line 395
+  *** MySQL query error:
+  SQL: SHOW COLUMNS FROM `glpi_plugin_actualtime_configs`
+  Error: Table 'u981745852_incv.glpi_plugin_actualtime_configs' doesn't exist
+  Backtrace :
+  src/DBmysql.php:954                                DBmysql->doQuery()
+  src/CommonDBTM.php:618                             DBmysql->listFields()
+  src/CommonDBTM.php:3375                            CommonDBTM->getEmpty()
+  src/CommonDBTM.php:3390                            CommonDBTM->maybePrivate()
+  src/CommonDBTM.php:2944                            CommonDBTM->isPrivate()
+  src/CommonDBTM.php:2525                            CommonDBTM->can()
+  .../twig/twig/src/Extension/CoreExtension.php:1764 CommonDBTM->canEdit()
+  ...tes/78/783323c9e7302dd474c5fad1127b2a1f.php:132 Twig\Extension\CoreExtension::getAttribute()
+  vendor/twig/twig/src/Template.php:360              __TwigTemplate_1ab8c5cdddb74d0bd536d6a65c432456->doDisplay()
+  vendor/twig/twig/src/Template.php:335              Twig\Template->yield()
+  vendor/twig/twig/src/TemplateWrapper.php:38        Twig\Template->render()
+  .../twig/twig/src/Extension/CoreExtension.php:1435 Twig\TemplateWrapper->render()
+  ...tes/30/30fa02db7da934359ceef5d431f6f375.php:132 Twig\Extension\CoreExtension::include()
+  vendor/twig/twig/src/Template.php:360              __TwigTemplate_d967e35aff623eaa071430f3e132b15a->doDisplay()
+  vendor/twig/twig/src/Template.php:327              Twig\Template->yield()
+  vendor/twig/twig/src/TemplateWrapper.php:45        Twig\Template->display()
+  src/Application/View/TemplateRenderer.php:184      Twig\TemplateWrapper->display()
+  src/CommonDBTM.php:2861                            Glpi\Application\View\TemplateRenderer->display()
+  marketplace/actualtime/inc/config.class.php:94     CommonDBTM->showFormHeader()
+  marketplace/actualtime/inc/config.class.php:173    PluginActualtimeConfig::showConfigForm()
+  src/CommonGLPI.php:694                             PluginActualtimeConfig::displayTabContentForItem()
+  src/CommonGLPI.php:656                             CommonGLPI::displayStandardTab()
+  ajax/common.tabs.php:120                           CommonGLPI::displayStandardTab()
+  {"user":"2@fr-int-web1788.main-hosting.eu","mem_usage":"0.001\", 21.73Mio)"} 
+[2026-04-28 15:36:34] glpisqllog.ERROR: DBmysql::doQuery() in /home/u981745852/domains/suporteincv.com/public_html/src/DBmysql.php line 395
+  *** MySQL query error:
+  SQL: SHOW COLUMNS FROM `glpi_plugin_actualtime_configs`
+  Error: Table 'u981745852_incv.glpi_plugin_actualtime_configs' doesn't exist
+  Backtrace :
+  src/DBmysql.php:954                                DBmysql->doQuery()
+  src/CommonDBTM.php:618                             DBmysql->listFields()
+  src/CommonDBTM.php:2927                            CommonDBTM->getEmpty()
+  src/CommonDBTM.php:2526                            CommonDBTM->can()
+  .../twig/twig/src/Extension/CoreExtension.php:1764 CommonDBTM->canEdit()
+  ...tes/78/783323c9e7302dd474c5fad1127b2a1f.php:132 Twig\Extension\CoreExtension::getAttribute()
+  vendor/twig/twig/src/Template.php:360              __TwigTemplate_1ab8c5cdddb74d0bd536d6a65c432456->doDisplay()
+  vendor/twig/twig/src/Template.php:335              Twig\Template->yield()
+  vendor/twig/twig/src/TemplateWrapper.php:38        Twig\Template->render()
+  .../twig/twig/src/Extension/CoreExtension.php:1435 Twig\TemplateWrapper->render()
+  ...tes/30/30fa02db7da934359ceef5d431f6f375.php:132 Twig\Extension\CoreExtension::include()
+  vendor/twig/twig/src/Template.php:360              __TwigTemplate_d967e35aff623eaa071430f3e132b15a->doDisplay()
+  vendor/twig/twig/src/Template.php:327              Twig\Template->yield()
+  vendor/twig/twig/src/TemplateWrapper.php:45        Twig\Template->display()
+  src/Application/View/TemplateRenderer.php:184      Twig\TemplateWrapper->display()
+  src/CommonDBTM.php:2861                            Glpi\Application\View\TemplateRenderer->display()
+  marketplace/actualtime/inc/config.class.php:94     CommonDBTM->showFormHeader()
+  marketplace/actualtime/inc/config.class.php:173    PluginActualtimeConfig::showConfigForm()
+  src/CommonGLPI.php:694                             PluginActualtimeConfig::displayTabContentForItem()
+  src/CommonGLPI.php:656                             CommonGLPI::displayStandardTab()
+  ajax/common.tabs.php:120                           CommonGLPI::displayStandardTab()
+  {"user":"2@fr-int-web1788.main-hosting.eu","mem_usage":"0.001\", 21.73Mio)"} 
+[2026-04-28 15:36:34] glpisqllog.ERROR: DBmysql::doQuery() in /home/u981745852/domains/suporteincv.com/public_html/src/DBmysql.php line 395
+  *** MySQL query error:
+  SQL: SHOW COLUMNS FROM `glpi_plugin_actualtime_configs`
+  Error: Table 'u981745852_incv.glpi_plugin_actualtime_configs' doesn't exist
+  Backtrace :
+  src/DBmysql.php:954                                DBmysql->doQuery()
+  src/CommonDBTM.php:618                             DBmysql->listFields()
+  src/CommonDBTM.php:3375                            CommonDBTM->getEmpty()
+  src/CommonDBTM.php:3390                            CommonDBTM->maybePrivate()
+  src/CommonDBTM.php:2944                            CommonDBTM->isPrivate()
+  src/CommonDBTM.php:2526                            CommonDBTM->can()
+  .../twig/twig/src/Extension/CoreExtension.php:1764 CommonDBTM->canEdit()
+  ...tes/78/783323c9e7302dd474c5fad1127b2a1f.php:132 Twig\Extension\CoreExtension::getAttribute()
+  vendor/twig/twig/src/Template.php:360              __TwigTemplate_1ab8c5cdddb74d0bd536d6a65c432456->doDisplay()
+  vendor/twig/twig/src/Template.php:335              Twig\Template->yield()
+  vendor/twig/twig/src/TemplateWrapper.php:38        Twig\Template->render()
+  .../twig/twig/src/Extension/CoreExtension.php:1435 Twig\TemplateWrapper->render()
+  ...tes/30/30fa02db7da934359ceef5d431f6f375.php:132 Twig\Extension\CoreExtension::include()
+  vendor/twig/twig/src/Template.php:360              __TwigTemplate_d967e35aff623eaa071430f3e132b15a->doDisplay()
+  vendor/twig/twig/src/Template.php:327              Twig\Template->yield()
+  vendor/twig/twig/src/TemplateWrapper.php:45        Twig\Template->display()
+  src/Application/View/TemplateRenderer.php:184      Twig\TemplateWrapper->display()
+  src/CommonDBTM.php:2861                            Glpi\Application\View\TemplateRenderer->display()
+  marketplace/actualtime/inc/config.class.php:94     CommonDBTM->showFormHeader()
+  marketplace/actualtime/inc/config.class.php:173    PluginActualtimeConfig::showConfigForm()
+  src/CommonGLPI.php:694                             PluginActualtimeConfig::displayTabContentForItem()
+  src/CommonGLPI.php:656                             CommonGLPI::displayStandardTab()
+  ajax/common.tabs.php:120                           CommonGLPI::displayStandardTab()
+  {"user":"2@fr-int-web1788.main-hosting.eu","mem_usage":"0.001\", 21.73Mio)"} 
+[2026-04-28 15:36:34] glpisqllog.ERROR: DBmysql::doQuery() in /home/u981745852/domains/suporteincv.com/public_html/src/DBmysql.php line 395
+  *** MySQL query error:
+  SQL: SHOW COLUMNS FROM `glpi_plugin_actualtime_configs`
+  Error: Table 'u981745852_incv.glpi_plugin_actualtime_configs' doesn't exist
+  Backtrace :
+  src/DBmysql.php:954                                DBmysql->doQuery()
+  src/CommonDBTM.php:618                             DBmysql->listFields()
+  src/CommonDBTM.php:3180                            CommonDBTM->getEmpty()
+  .../twig/twig/src/Extension/CoreExtension.php:1764 CommonDBTM->isEntityAssign()
+  ...tes/78/783323c9e7302dd474c5fad1127b2a1f.php:312 Twig\Extension\CoreExtension::getAttribute()
+  vendor/twig/twig/src/Template.php:360              __TwigTemplate_1ab8c5cdddb74d0bd536d6a65c432456->doDisplay()
+  vendor/twig/twig/src/Template.php:335              Twig\Template->yield()
+  vendor/twig/twig/src/TemplateWrapper.php:38        Twig\Template->render()
+  .../twig/twig/src/Extension/CoreExtension.php:1435 Twig\TemplateWrapper->render()
+  ...tes/30/30fa02db7da934359ceef5d431f6f375.php:132 Twig\Extension\CoreExtension::include()
+  vendor/twig/twig/src/Template.php:360              __TwigTemplate_d967e35aff623eaa071430f3e132b15a->doDisplay()
+  vendor/twig/twig/src/Template.php:327              Twig\Template->yield()
+  vendor/twig/twig/src/TemplateWrapper.php:45        Twig\Template->display()
+  src/Application/View/TemplateRenderer.php:184      Twig\TemplateWrapper->display()
+  src/CommonDBTM.php:2861                            Glpi\Application\View\TemplateRenderer->display()
+  marketplace/actualtime/inc/config.class.php:94     CommonDBTM->showFormHeader()
+  marketplace/actualtime/inc/config.class.php:173    PluginActualtimeConfig::showConfigForm()
+  src/CommonGLPI.php:694                             PluginActualtimeConfig::displayTabContentForItem()
+  src/CommonGLPI.php:656                             CommonGLPI::displayStandardTab()
+  ajax/common.tabs.php:120                           CommonGLPI::displayStandardTab()
+  {"user":"2@fr-int-web1788.main-hosting.eu","mem_usage":"0.001\", 21.73Mio)"} 
+[2026-04-28 15:37:54] glpisqllog.ERROR: DBmysql::doQuery() in /home/u981745852/domains/suporteincv.com/public_html/src/DBmysql.php line 395
+  *** MySQL query error:
+  SQL: SELECT * FROM `glpi_plugin_actualtime_configs` WHERE `glpi_plugin_actualtime_configs`.`id` = '1' LIMIT 1
+  Error: Table 'u981745852_incv.glpi_plugin_actualtime_configs' doesn't exist
+  Backtrace :
+  src/DBmysqlIterator.php:112                        DBmysql->doQuery()
+  src/DBmysql.php:1105                               DBmysqlIterator->execute()
+  src/CommonDBTM.php:304                             DBmysql->request()
+  marketplace/actualtime/inc/config.class.php:92     CommonDBTM->getFromDB()
+  marketplace/actualtime/inc/config.class.php:173    PluginActualtimeConfig::showConfigForm()
+  src/CommonGLPI.php:694                             PluginActualtimeConfig::displayTabContentForItem()
+  src/CommonGLPI.php:656                             CommonGLPI::displayStandardTab()
+  ajax/common.tabs.php:120                           CommonGLPI::displayStandardTab()
+  {"user":"2@fr-int-web1788.main-hosting.eu"} 
+[2026-04-28 15:37:54] glpisqllog.ERROR: DBmysql::doQuery() in /home/u981745852/domains/suporteincv.com/public_html/src/DBmysql.php line 395
+  *** MySQL query error:
+  SQL: SHOW COLUMNS FROM `glpi_plugin_actualtime_configs`
+  Error: Table 'u981745852_incv.glpi_plugin_actualtime_configs' doesn't exist
+  Backtrace :
+  src/DBmysql.php:954                                DBmysql->doQuery()
+  src/CommonDBTM.php:618                             DBmysql->listFields()
+  src/CommonDBTM.php:3180                            CommonDBTM->getEmpty()
+  .../twig/twig/src/Extension/CoreExtension.php:1764 CommonDBTM->isEntityAssign()
+  ...ates/30/30fa02db7da934359ceef5d431f6f375.php:60 Twig\Extension\CoreExtension::getAttribute()
+  vendor/twig/twig/src/Template.php:360              __TwigTemplate_d967e35aff623eaa071430f3e132b15a->doDisplay()
+  vendor/twig/twig/src/Template.php:327              Twig\Template->yield()
+  vendor/twig/twig/src/TemplateWrapper.php:45        Twig\Template->display()
+  src/Application/View/TemplateRenderer.php:184      Twig\TemplateWrapper->display()
+  src/CommonDBTM.php:2861                            Glpi\Application\View\TemplateRenderer->display()
+  marketplace/actualtime/inc/config.class.php:94     CommonDBTM->showFormHeader()
+  marketplace/actualtime/inc/config.class.php:173    PluginActualtimeConfig::showConfigForm()
+  src/CommonGLPI.php:694                             PluginActualtimeConfig::displayTabContentForItem()
+  src/CommonGLPI.php:656                             CommonGLPI::displayStandardTab()
+  ajax/common.tabs.php:120                           CommonGLPI::displayStandardTab()
+  {"user":"2@fr-int-web1788.main-hosting.eu","mem_usage":"0.001\", 21.63Mio)"} 
+[2026-04-28 15:37:54] glpisqllog.ERROR: DBmysql::doQuery() in /home/u981745852/domains/suporteincv.com/public_html/src/DBmysql.php line 395
+  *** MySQL query error:
+  SQL: SHOW COLUMNS FROM `glpi_plugin_actualtime_configs`
+  Error: Table 'u981745852_incv.glpi_plugin_actualtime_configs' doesn't exist
+  Backtrace :
+  src/DBmysql.php:954                                DBmysql->doQuery()
+  src/CommonDBTM.php:618                             DBmysql->listFields()
+  src/CommonDBTM.php:3230                            CommonDBTM->getEmpty()
+  src/CommonDBTM.php:2518                            CommonDBTM->maybeDeleted()
+  .../twig/twig/src/Extension/CoreExtension.php:1764 CommonDBTM->canEdit()
+  ...tes/30/30fa02db7da934359ceef5d431f6f375.php:101 Twig\Extension\CoreExtension::getAttribute()
+  vendor/twig/twig/src/Template.php:360              __TwigTemplate_d967e35aff623eaa071430f3e132b15a->doDisplay()
+  vendor/twig/twig/src/Template.php:327              Twig\Template->yield()
+  vendor/twig/twig/src/TemplateWrapper.php:45        Twig\Template->display()
+  src/Application/View/TemplateRenderer.php:184      Twig\TemplateWrapper->display()
+  src/CommonDBTM.php:2861                            Glpi\Application\View\TemplateRenderer->display()
+  marketplace/actualtime/inc/config.class.php:94     CommonDBTM->showFormHeader()
+  marketplace/actualtime/inc/config.class.php:173    PluginActualtimeConfig::showConfigForm()
+  src/CommonGLPI.php:694                             PluginActualtimeConfig::displayTabContentForItem()
+  src/CommonGLPI.php:656                             CommonGLPI::displayStandardTab()
+  ajax/common.tabs.php:120                           CommonGLPI::displayStandardTab()
+  {"user":"2@fr-int-web1788.main-hosting.eu","mem_usage":"0.001\", 21.63Mio)"} 
+[2026-04-28 15:37:54] glpisqllog.ERROR: DBmysql::doQuery() in /home/u981745852/domains/suporteincv.com/public_html/src/DBmysql.php line 395
+  *** MySQL query error:
+  SQL: SHOW COLUMNS FROM `glpi_plugin_actualtime_configs`
+  Error: Table 'u981745852_incv.glpi_plugin_actualtime_configs' doesn't exist
+  Backtrace :
+  src/DBmysql.php:954                                DBmysql->doQuery()
+  src/CommonDBTM.php:618                             DBmysql->listFields()
+  src/CommonDBTM.php:2927                            CommonDBTM->getEmpty()
+  src/CommonDBTM.php:2524                            CommonDBTM->can()
+  .../twig/twig/src/Extension/CoreExtension.php:1764 CommonDBTM->canEdit()
+  ...tes/30/30fa02db7da934359ceef5d431f6f375.php:101 Twig\Extension\CoreExtension::getAttribute()
+  vendor/twig/twig/src/Template.php:360              __TwigTemplate_d967e35aff623eaa071430f3e132b15a->doDisplay()
+  vendor/twig/twig/src/Template.php:327              Twig\Template->yield()
+  vendor/twig/twig/src/TemplateWrapper.php:45        Twig\Template->display()
+  src/Application/View/TemplateRenderer.php:184      Twig\TemplateWrapper->display()
+  src/CommonDBTM.php:2861                            Glpi\Application\View\TemplateRenderer->display()
+  marketplace/actualtime/inc/config.class.php:94     CommonDBTM->showFormHeader()
+  marketplace/actualtime/inc/config.class.php:173    PluginActualtimeConfig::showConfigForm()
+  src/CommonGLPI.php:694                             PluginActualtimeConfig::displayTabContentForItem()
+  src/CommonGLPI.php:656                             CommonGLPI::displayStandardTab()
+  ajax/common.tabs.php:120                           CommonGLPI::displayStandardTab()
+  {"user":"2@fr-int-web1788.main-hosting.eu","mem_usage":"0.001\", 21.63Mio)"} 
+[2026-04-28 15:37:54] glpisqllog.ERROR: DBmysql::doQuery() in /home/u981745852/domains/suporteincv.com/public_html/src/DBmysql.php line 395
+  *** MySQL query error:
+  SQL: SHOW COLUMNS FROM `glpi_plugin_actualtime_configs`
+  Error: Table 'u981745852_incv.glpi_plugin_actualtime_configs' doesn't exist
+  Backtrace :
+  src/DBmysql.php:954                                DBmysql->doQuery()
+  src/CommonDBTM.php:618                             DBmysql->listFields()
+  src/CommonDBTM.php:3375                            CommonDBTM->getEmpty()
+  src/CommonDBTM.php:3390                            CommonDBTM->maybePrivate()
+  src/CommonDBTM.php:2944                            CommonDBTM->isPrivate()
+  src/CommonDBTM.php:2524                            CommonDBTM->can()
+  .../twig/twig/src/Extension/CoreExtension.php:1764 CommonDBTM->canEdit()
+  ...tes/30/30fa02db7da934359ceef5d431f6f375.php:101 Twig\Extension\CoreExtension::getAttribute()
+  vendor/twig/twig/src/Template.php:360              __TwigTemplate_d967e35aff623eaa071430f3e132b15a->doDisplay()
+  vendor/twig/twig/src/Template.php:327              Twig\Template->yield()
+  vendor/twig/twig/src/TemplateWrapper.php:45        Twig\Template->display()
+  src/Application/View/TemplateRenderer.php:184      Twig\TemplateWrapper->display()
+  src/CommonDBTM.php:2861                            Glpi\Application\View\TemplateRenderer->display()
+  marketplace/actualtime/inc/config.class.php:94     CommonDBTM->showFormHeader()
+  marketplace/actualtime/inc/config.class.php:173    PluginActualtimeConfig::showConfigForm()
+  src/CommonGLPI.php:694                             PluginActualtimeConfig::displayTabContentForItem()
+  src/CommonGLPI.php:656                             CommonGLPI::displayStandardTab()
+  ajax/common.tabs.php:120                           CommonGLPI::displayStandardTab()
+  {"user":"2@fr-int-web1788.main-hosting.eu","mem_usage":"0.001\", 21.63Mio)"} 
+[2026-04-28 15:37:54] glpisqllog.ERROR: DBmysql::doQuery() in /home/u981745852/domains/suporteincv.com/public_html/src/DBmysql.php line 395
+  *** MySQL query error:
+  SQL: SHOW COLUMNS FROM `glpi_plugin_actualtime_configs`
+  Error: Table 'u981745852_incv.glpi_plugin_actualtime_configs' doesn't exist
+  Backtrace :
+  src/DBmysql.php:954                                DBmysql->doQuery()
+  src/CommonDBTM.php:618                             DBmysql->listFields()
+  src/CommonDBTM.php:2927                            CommonDBTM->getEmpty()
+  src/CommonDBTM.php:2525                            CommonDBTM->can()
+  .../twig/twig/src/Extension/CoreExtension.php:1764 CommonDBTM->canEdit()
+  ...tes/30/30fa02db7da934359ceef5d431f6f375.php:101 Twig\Extension\CoreExtension::getAttribute()
+  vendor/twig/twig/src/Template.php:360              __TwigTemplate_d967e35aff623eaa071430f3e132b15a->doDisplay()
+  vendor/twig/twig/src/Template.php:327              Twig\Template->yield()
+  vendor/twig/twig/src/TemplateWrapper.php:45        Twig\Template->display()
+  src/Application/View/TemplateRenderer.php:184      Twig\TemplateWrapper->display()
+  src/CommonDBTM.php:2861                            Glpi\Application\View\TemplateRenderer->display()
+  marketplace/actualtime/inc/config.class.php:94     CommonDBTM->showFormHeader()
+  marketplace/actualtime/inc/config.class.php:173    PluginActualtimeConfig::showConfigForm()
+  src/CommonGLPI.php:694                             PluginActualtimeConfig::displayTabContentForItem()
+  src/CommonGLPI.php:656                             CommonGLPI::displayStandardTab()
+  ajax/common.tabs.php:120                           CommonGLPI::displayStandardTab()
+  {"user":"2@fr-int-web1788.main-hosting.eu","mem_usage":"0.000\", 21.63Mio)"} 
+[2026-04-28 15:37:54] glpisqllog.ERROR: DBmysql::doQuery() in /home/u981745852/domains/suporteincv.com/public_html/src/DBmysql.php line 395
+  *** MySQL query error:
+  SQL: SHOW COLUMNS FROM `glpi_plugin_actualtime_configs`
+  Error: Table 'u981745852_incv.glpi_plugin_actualtime_configs' doesn't exist
+  Backtrace :
+  src/DBmysql.php:954                                DBmysql->doQuery()
+  src/CommonDBTM.php:618                             DBmysql->listFields()
+  src/CommonDBTM.php:3375                            CommonDBTM->getEmpty()
+  src/CommonDBTM.php:3390                            CommonDBTM->maybePrivate()
+  src/CommonDBTM.php:2944                            CommonDBTM->isPrivate()
+  src/CommonDBTM.php:2525                            CommonDBTM->can()
+  .../twig/twig/src/Extension/CoreExtension.php:1764 CommonDBTM->canEdit()
+  ...tes/30/30fa02db7da934359ceef5d431f6f375.php:101 Twig\Extension\CoreExtension::getAttribute()
+  vendor/twig/twig/src/Template.php:360              __TwigTemplate_d967e35aff623eaa071430f3e132b15a->doDisplay()
+  vendor/twig/twig/src/Template.php:327              Twig\Template->yield()
+  vendor/twig/twig/src/TemplateWrapper.php:45        Twig\Template->display()
+  src/Application/View/TemplateRenderer.php:184      Twig\TemplateWrapper->display()
+  src/CommonDBTM.php:2861                            Glpi\Application\View\TemplateRenderer->display()
+  marketplace/actualtime/inc/config.class.php:94     CommonDBTM->showFormHeader()
+  marketplace/actualtime/inc/config.class.php:173    PluginActualtimeConfig::showConfigForm()
+  src/CommonGLPI.php:694                             PluginActualtimeConfig::displayTabContentForItem()
+  src/CommonGLPI.php:656                             CommonGLPI::displayStandardTab()
+  ajax/common.tabs.php:120                           CommonGLPI::displayStandardTab()
+  {"user":"2@fr-int-web1788.main-hosting.eu","mem_usage":"0.001\", 21.63Mio)"} 
+[2026-04-28 15:37:54] glpisqllog.ERROR: DBmysql::doQuery() in /home/u981745852/domains/suporteincv.com/public_html/src/DBmysql.php line 395
+  *** MySQL query error:
+  SQL: SHOW COLUMNS FROM `glpi_plugin_actualtime_configs`
+  Error: Table 'u981745852_incv.glpi_plugin_actualtime_configs' doesn't exist
+  Backtrace :
+  src/DBmysql.php:954                                DBmysql->doQuery()
+  src/CommonDBTM.php:618                             DBmysql->listFields()
+  src/CommonDBTM.php:2927                            CommonDBTM->getEmpty()
+  src/CommonDBTM.php:2526                            CommonDBTM->can()
+  .../twig/twig/src/Extension/CoreExtension.php:1764 CommonDBTM->canEdit()
+  ...tes/30/30fa02db7da934359ceef5d431f6f375.php:101 Twig\Extension\CoreExtension::getAttribute()
+  vendor/twig/twig/src/Template.php:360              __TwigTemplate_d967e35aff623eaa071430f3e132b15a->doDisplay()
+  vendor/twig/twig/src/Template.php:327              Twig\Template->yield()
+  vendor/twig/twig/src/TemplateWrapper.php:45        Twig\Template->display()
+  src/Application/View/TemplateRenderer.php:184      Twig\TemplateWrapper->display()
+  src/CommonDBTM.php:2861                            Glpi\Application\View\TemplateRenderer->display()
+  marketplace/actualtime/inc/config.class.php:94     CommonDBTM->showFormHeader()
+  marketplace/actualtime/inc/config.class.php:173    PluginActualtimeConfig::showConfigForm()
+  src/CommonGLPI.php:694                             PluginActualtimeConfig::displayTabContentForItem()
+  src/CommonGLPI.php:656                             CommonGLPI::displayStandardTab()
+  ajax/common.tabs.php:120                           CommonGLPI::displayStandardTab()
+  {"user":"2@fr-int-web1788.main-hosting.eu","mem_usage":"0.000\", 21.63Mio)"} 
+[2026-04-28 15:37:54] glpisqllog.ERROR: DBmysql::doQuery() in /home/u981745852/domains/suporteincv.com/public_html/src/DBmysql.php line 395
+  *** MySQL query error:
+  SQL: SHOW COLUMNS FROM `glpi_plugin_actualtime_configs`
+  Error: Table 'u981745852_incv.glpi_plugin_actualtime_configs' doesn't exist
+  Backtrace :
+  src/DBmysql.php:954                                DBmysql->doQuery()
+  src/CommonDBTM.php:618                             DBmysql->listFields()
+  src/CommonDBTM.php:3375                            CommonDBTM->getEmpty()
+  src/CommonDBTM.php:3390                            CommonDBTM->maybePrivate()
+  src/CommonDBTM.php:2944                            CommonDBTM->isPrivate()
+  src/CommonDBTM.php:2526                            CommonDBTM->can()
+  .../twig/twig/src/Extension/CoreExtension.php:1764 CommonDBTM->canEdit()
+  ...tes/30/30fa02db7da934359ceef5d431f6f375.php:101 Twig\Extension\CoreExtension::getAttribute()
+  vendor/twig/twig/src/Template.php:360              __TwigTemplate_d967e35aff623eaa071430f3e132b15a->doDisplay()
+  vendor/twig/twig/src/Template.php:327              Twig\Template->yield()
+  vendor/twig/twig/src/TemplateWrapper.php:45        Twig\Template->display()
+  src/Application/View/TemplateRenderer.php:184      Twig\TemplateWrapper->display()
+  src/CommonDBTM.php:2861                            Glpi\Application\View\TemplateRenderer->display()
+  marketplace/actualtime/inc/config.class.php:94     CommonDBTM->showFormHeader()
+  marketplace/actualtime/inc/config.class.php:173    PluginActualtimeConfig::showConfigForm()
+  src/CommonGLPI.php:694                             PluginActualtimeConfig::displayTabContentForItem()
+  src/CommonGLPI.php:656                             CommonGLPI::displayStandardTab()
+  ajax/common.tabs.php:120                           CommonGLPI::displayStandardTab()
+  {"user":"2@fr-int-web1788.main-hosting.eu","mem_usage":"0.000\", 21.63Mio)"} 
+[2026-04-28 15:37:54] glpisqllog.ERROR: DBmysql::doQuery() in /home/u981745852/domains/suporteincv.com/public_html/src/DBmysql.php line 395
+  *** MySQL query error:
+  SQL: SHOW COLUMNS FROM `glpi_plugin_actualtime_configs`
+  Error: Table 'u981745852_incv.glpi_plugin_actualtime_configs' doesn't exist
+  Backtrace :
+  src/DBmysql.php:954                                DBmysql->doQuery()
+  src/CommonDBTM.php:618                             DBmysql->listFields()
+  src/CommonDBTM.php:3230                            CommonDBTM->getEmpty()
+  src/CommonDBTM.php:2518                            CommonDBTM->maybeDeleted()
+  .../twig/twig/src/Extension/CoreExtension.php:1764 CommonDBTM->canEdit()
+  ...tes/78/783323c9e7302dd474c5fad1127b2a1f.php:132 Twig\Extension\CoreExtension::getAttribute()
+  vendor/twig/twig/src/Template.php:360              __TwigTemplate_1ab8c5cdddb74d0bd536d6a65c432456->doDisplay()
+  vendor/twig/twig/src/Template.php:335              Twig\Template->yield()
+  vendor/twig/twig/src/TemplateWrapper.php:38        Twig\Template->render()
+  .../twig/twig/src/Extension/CoreExtension.php:1435 Twig\TemplateWrapper->render()
+  ...tes/30/30fa02db7da934359ceef5d431f6f375.php:132 Twig\Extension\CoreExtension::include()
+  vendor/twig/twig/src/Template.php:360              __TwigTemplate_d967e35aff623eaa071430f3e132b15a->doDisplay()
+  vendor/twig/twig/src/Template.php:327              Twig\Template->yield()
+  vendor/twig/twig/src/TemplateWrapper.php:45        Twig\Template->display()
+  src/Application/View/TemplateRenderer.php:184      Twig\TemplateWrapper->display()
+  src/CommonDBTM.php:2861                            Glpi\Application\View\TemplateRenderer->display()
+  marketplace/actualtime/inc/config.class.php:94     CommonDBTM->showFormHeader()
+  marketplace/actualtime/inc/config.class.php:173    PluginActualtimeConfig::showConfigForm()
+  src/CommonGLPI.php:694                             PluginActualtimeConfig::displayTabContentForItem()
+  src/CommonGLPI.php:656                             CommonGLPI::displayStandardTab()
+  ajax/common.tabs.php:120                           CommonGLPI::displayStandardTab()
+  {"user":"2@fr-int-web1788.main-hosting.eu","mem_usage":"0.001\", 21.65Mio)"} 
+[2026-04-28 15:37:54] glpisqllog.ERROR: DBmysql::doQuery() in /home/u981745852/domains/suporteincv.com/public_html/src/DBmysql.php line 395
+  *** MySQL query error:
+  SQL: SHOW COLUMNS FROM `glpi_plugin_actualtime_configs`
+  Error: Table 'u981745852_incv.glpi_plugin_actualtime_configs' doesn't exist
+  Backtrace :
+  src/DBmysql.php:954                                DBmysql->doQuery()
+  src/CommonDBTM.php:618                             DBmysql->listFields()
+  src/CommonDBTM.php:2927                            CommonDBTM->getEmpty()
+  src/CommonDBTM.php:2524                            CommonDBTM->can()
+  .../twig/twig/src/Extension/CoreExtension.php:1764 CommonDBTM->canEdit()
+  ...tes/78/783323c9e7302dd474c5fad1127b2a1f.php:132 Twig\Extension\CoreExtension::getAttribute()
+  vendor/twig/twig/src/Template.php:360              __TwigTemplate_1ab8c5cdddb74d0bd536d6a65c432456->doDisplay()
+  vendor/twig/twig/src/Template.php:335              Twig\Template->yield()
+  vendor/twig/twig/src/TemplateWrapper.php:38        Twig\Template->render()
+  .../twig/twig/src/Extension/CoreExtension.php:1435 Twig\TemplateWrapper->render()
+  ...tes/30/30fa02db7da934359ceef5d431f6f375.php:132 Twig\Extension\CoreExtension::include()
+  vendor/twig/twig/src/Template.php:360              __TwigTemplate_d967e35aff623eaa071430f3e132b15a->doDisplay()
+  vendor/twig/twig/src/Template.php:327              Twig\Template->yield()
+  vendor/twig/twig/src/TemplateWrapper.php:45        Twig\Template->display()
+  src/Application/View/TemplateRenderer.php:184      Twig\TemplateWrapper->display()
+  src/CommonDBTM.php:2861                            Glpi\Application\View\TemplateRenderer->display()
+  marketplace/actualtime/inc/config.class.php:94     CommonDBTM->showFormHeader()
+  marketplace/actualtime/inc/config.class.php:173    PluginActualtimeConfig::showConfigForm()
+  src/CommonGLPI.php:694                             PluginActualtimeConfig::displayTabContentForItem()
+  src/CommonGLPI.php:656                             CommonGLPI::displayStandardTab()
+  ajax/common.tabs.php:120                           CommonGLPI::displayStandardTab()
+  {"user":"2@fr-int-web1788.main-hosting.eu","mem_usage":"0.001\", 21.65Mio)"} 
+[2026-04-28 15:37:54] glpisqllog.ERROR: DBmysql::doQuery() in /home/u981745852/domains/suporteincv.com/public_html/src/DBmysql.php line 395
+  *** MySQL query error:
+  SQL: SHOW COLUMNS FROM `glpi_plugin_actualtime_configs`
+  Error: Table 'u981745852_incv.glpi_plugin_actualtime_configs' doesn't exist
+  Backtrace :
+  src/DBmysql.php:954                                DBmysql->doQuery()
+  src/CommonDBTM.php:618                             DBmysql->listFields()
+  src/CommonDBTM.php:3375                            CommonDBTM->getEmpty()
+  src/CommonDBTM.php:3390                            CommonDBTM->maybePrivate()
+  src/CommonDBTM.php:2944                            CommonDBTM->isPrivate()
+  src/CommonDBTM.php:2524                            CommonDBTM->can()
+  .../twig/twig/src/Extension/CoreExtension.php:1764 CommonDBTM->canEdit()
+  ...tes/78/783323c9e7302dd474c5fad1127b2a1f.php:132 Twig\Extension\CoreExtension::getAttribute()
+  vendor/twig/twig/src/Template.php:360              __TwigTemplate_1ab8c5cdddb74d0bd536d6a65c432456->doDisplay()
+  vendor/twig/twig/src/Template.php:335              Twig\Template->yield()
+  vendor/twig/twig/src/TemplateWrapper.php:38        Twig\Template->render()
+  .../twig/twig/src/Extension/CoreExtension.php:1435 Twig\TemplateWrapper->render()
+  ...tes/30/30fa02db7da934359ceef5d431f6f375.php:132 Twig\Extension\CoreExtension::include()
+  vendor/twig/twig/src/Template.php:360              __TwigTemplate_d967e35aff623eaa071430f3e132b15a->doDisplay()
+  vendor/twig/twig/src/Template.php:327              Twig\Template->yield()
+  vendor/twig/twig/src/TemplateWrapper.php:45        Twig\Template->display()
+  src/Application/View/TemplateRenderer.php:184      Twig\TemplateWrapper->display()
+  src/CommonDBTM.php:2861                            Glpi\Application\View\TemplateRenderer->display()
+  marketplace/actualtime/inc/config.class.php:94     CommonDBTM->showFormHeader()
+  marketplace/actualtime/inc/config.class.php:173    PluginActualtimeConfig::showConfigForm()
+  src/CommonGLPI.php:694                             PluginActualtimeConfig::displayTabContentForItem()
+  src/CommonGLPI.php:656                             CommonGLPI::displayStandardTab()
+  ajax/common.tabs.php:120                           CommonGLPI::displayStandardTab()
+  {"user":"2@fr-int-web1788.main-hosting.eu","mem_usage":"0.001\", 21.65Mio)"} 
+[2026-04-28 15:37:54] glpisqllog.ERROR: DBmysql::doQuery() in /home/u981745852/domains/suporteincv.com/public_html/src/DBmysql.php line 395
+  *** MySQL query error:
+  SQL: SHOW COLUMNS FROM `glpi_plugin_actualtime_configs`
+  Error: Table 'u981745852_incv.glpi_plugin_actualtime_configs' doesn't exist
+  Backtrace :
+  src/DBmysql.php:954                                DBmysql->doQuery()
+  src/CommonDBTM.php:618                             DBmysql->listFields()
+  src/CommonDBTM.php:2927                            CommonDBTM->getEmpty()
+  src/CommonDBTM.php:2525                            CommonDBTM->can()
+  .../twig/twig/src/Extension/CoreExtension.php:1764 CommonDBTM->canEdit()
+  ...tes/78/783323c9e7302dd474c5fad1127b2a1f.php:132 Twig\Extension\CoreExtension::getAttribute()
+  vendor/twig/twig/src/Template.php:360              __TwigTemplate_1ab8c5cdddb74d0bd536d6a65c432456->doDisplay()
+  vendor/twig/twig/src/Template.php:335              Twig\Template->yield()
+  vendor/twig/twig/src/TemplateWrapper.php:38        Twig\Template->render()
+  .../twig/twig/src/Extension/CoreExtension.php:1435 Twig\TemplateWrapper->render()
+  ...tes/30/30fa02db7da934359ceef5d431f6f375.php:132 Twig\Extension\CoreExtension::include()
+  vendor/twig/twig/src/Template.php:360              __TwigTemplate_d967e35aff623eaa071430f3e132b15a->doDisplay()
+  vendor/twig/twig/src/Template.php:327              Twig\Template->yield()
+  vendor/twig/twig/src/TemplateWrapper.php:45        Twig\Template->display()
+  src/Application/View/TemplateRenderer.php:184      Twig\TemplateWrapper->display()
+  src/CommonDBTM.php:2861                            Glpi\Application\View\TemplateRenderer->display()
+  marketplace/actualtime/inc/config.class.php:94     CommonDBTM->showFormHeader()
+  marketplace/actualtime/inc/config.class.php:173    PluginActualtimeConfig::showConfigForm()
+  src/CommonGLPI.php:694                             PluginActualtimeConfig::displayTabContentForItem()
+  src/CommonGLPI.php:656                             CommonGLPI::displayStandardTab()
+  ajax/common.tabs.php:120                           CommonGLPI::displayStandardTab()
+  {"user":"2@fr-int-web1788.main-hosting.eu","mem_usage":"0.001\", 21.65Mio)"} 
+[2026-04-28 15:37:54] glpisqllog.ERROR: DBmysql::doQuery() in /home/u981745852/domains/suporteincv.com/public_html/src/DBmysql.php line 395
+  *** MySQL query error:
+  SQL: SHOW COLUMNS FROM `glpi_plugin_actualtime_configs`
+  Error: Table 'u981745852_incv.glpi_plugin_actualtime_configs' doesn't exist
+  Backtrace :
+  src/DBmysql.php:954                                DBmysql->doQuery()
+  src/CommonDBTM.php:618                             DBmysql->listFields()
+  src/CommonDBTM.php:3375                            CommonDBTM->getEmpty()
+  src/CommonDBTM.php:3390                            CommonDBTM->maybePrivate()
+  src/CommonDBTM.php:2944                            CommonDBTM->isPrivate()
+  src/CommonDBTM.php:2525                            CommonDBTM->can()
+  .../twig/twig/src/Extension/CoreExtension.php:1764 CommonDBTM->canEdit()
+  ...tes/78/783323c9e7302dd474c5fad1127b2a1f.php:132 Twig\Extension\CoreExtension::getAttribute()
+  vendor/twig/twig/src/Template.php:360              __TwigTemplate_1ab8c5cdddb74d0bd536d6a65c432456->doDisplay()
+  vendor/twig/twig/src/Template.php:335              Twig\Template->yield()
+  vendor/twig/twig/src/TemplateWrapper.php:38        Twig\Template->render()
+  .../twig/twig/src/Extension/CoreExtension.php:1435 Twig\TemplateWrapper->render()
+  ...tes/30/30fa02db7da934359ceef5d431f6f375.php:132 Twig\Extension\CoreExtension::include()
+  vendor/twig/twig/src/Template.php:360              __TwigTemplate_d967e35aff623eaa071430f3e132b15a->doDisplay()
+  vendor/twig/twig/src/Template.php:327              Twig\Template->yield()
+  vendor/twig/twig/src/TemplateWrapper.php:45        Twig\Template->display()
+  src/Application/View/TemplateRenderer.php:184      Twig\TemplateWrapper->display()
+  src/CommonDBTM.php:2861                            Glpi\Application\View\TemplateRenderer->display()
+  marketplace/actualtime/inc/config.class.php:94     CommonDBTM->showFormHeader()
+  marketplace/actualtime/inc/config.class.php:173    PluginActualtimeConfig::showConfigForm()
+  src/CommonGLPI.php:694                             PluginActualtimeConfig::displayTabContentForItem()
+  src/CommonGLPI.php:656                             CommonGLPI::displayStandardTab()
+  ajax/common.tabs.php:120                           CommonGLPI::displayStandardTab()
+  {"user":"2@fr-int-web1788.main-hosting.eu","mem_usage":"0.001\", 21.65Mio)"} 
+[2026-04-28 15:37:54] glpisqllog.ERROR: DBmysql::doQuery() in /home/u981745852/domains/suporteincv.com/public_html/src/DBmysql.php line 395
+  *** MySQL query error:
+  SQL: SHOW COLUMNS FROM `glpi_plugin_actualtime_configs`
+  Error: Table 'u981745852_incv.glpi_plugin_actualtime_configs' doesn't exist
+  Backtrace :
+  src/DBmysql.php:954                                DBmysql->doQuery()
+  src/CommonDBTM.php:618                             DBmysql->listFields()
+  src/CommonDBTM.php:2927                            CommonDBTM->getEmpty()
+  src/CommonDBTM.php:2526                            CommonDBTM->can()
+  .../twig/twig/src/Extension/CoreExtension.php:1764 CommonDBTM->canEdit()
+  ...tes/78/783323c9e7302dd474c5fad1127b2a1f.php:132 Twig\Extension\CoreExtension::getAttribute()
+  vendor/twig/twig/src/Template.php:360              __TwigTemplate_1ab8c5cdddb74d0bd536d6a65c432456->doDisplay()
+  vendor/twig/twig/src/Template.php:335              Twig\Template->yield()
+  vendor/twig/twig/src/TemplateWrapper.php:38        Twig\Template->render()
+  .../twig/twig/src/Extension/CoreExtension.php:1435 Twig\TemplateWrapper->render()
+  ...tes/30/30fa02db7da934359ceef5d431f6f375.php:132 Twig\Extension\CoreExtension::include()
+  vendor/twig/twig/src/Template.php:360              __TwigTemplate_d967e35aff623eaa071430f3e132b15a->doDisplay()
+  vendor/twig/twig/src/Template.php:327              Twig\Template->yield()
+  vendor/twig/twig/src/TemplateWrapper.php:45        Twig\Template->display()
+  src/Application/View/TemplateRenderer.php:184      Twig\TemplateWrapper->display()
+  src/CommonDBTM.php:2861                            Glpi\Application\View\TemplateRenderer->display()
+  marketplace/actualtime/inc/config.class.php:94     CommonDBTM->showFormHeader()
+  marketplace/actualtime/inc/config.class.php:173    PluginActualtimeConfig::showConfigForm()
+  src/CommonGLPI.php:694                             PluginActualtimeConfig::displayTabContentForItem()
+  src/CommonGLPI.php:656                             CommonGLPI::displayStandardTab()
+  ajax/common.tabs.php:120                           CommonGLPI::displayStandardTab()
+  {"user":"2@fr-int-web1788.main-hosting.eu","mem_usage":"0.001\", 21.65Mio)"} 
+[2026-04-28 15:37:54] glpisqllog.ERROR: DBmysql::doQuery() in /home/u981745852/domains/suporteincv.com/public_html/src/DBmysql.php line 395
+  *** MySQL query error:
+  SQL: SHOW COLUMNS FROM `glpi_plugin_actualtime_configs`
+  Error: Table 'u981745852_incv.glpi_plugin_actualtime_configs' doesn't exist
+  Backtrace :
+  src/DBmysql.php:954                                DBmysql->doQuery()
+  src/CommonDBTM.php:618                             DBmysql->listFields()
+  src/CommonDBTM.php:3375                            CommonDBTM->getEmpty()
+  src/CommonDBTM.php:3390                            CommonDBTM->maybePrivate()
+  src/CommonDBTM.php:2944                            CommonDBTM->isPrivate()
+  src/CommonDBTM.php:2526                            CommonDBTM->can()
+  .../twig/twig/src/Extension/CoreExtension.php:1764 CommonDBTM->canEdit()
+  ...tes/78/783323c9e7302dd474c5fad1127b2a1f.php:132 Twig\Extension\CoreExtension::getAttribute()
+  vendor/twig/twig/src/Template.php:360              __TwigTemplate_1ab8c5cdddb74d0bd536d6a65c432456->doDisplay()
+  vendor/twig/twig/src/Template.php:335              Twig\Template->yield()
+  vendor/twig/twig/src/TemplateWrapper.php:38        Twig\Template->render()
+  .../twig/twig/src/Extension/CoreExtension.php:1435 Twig\TemplateWrapper->render()
+  ...tes/30/30fa02db7da934359ceef5d431f6f375.php:132 Twig\Extension\CoreExtension::include()
+  vendor/twig/twig/src/Template.php:360              __TwigTemplate_d967e35aff623eaa071430f3e132b15a->doDisplay()
+  vendor/twig/twig/src/Template.php:327              Twig\Template->yield()
+  vendor/twig/twig/src/TemplateWrapper.php:45        Twig\Template->display()
+  src/Application/View/TemplateRenderer.php:184      Twig\TemplateWrapper->display()
+  src/CommonDBTM.php:2861                            Glpi\Application\View\TemplateRenderer->display()
+  marketplace/actualtime/inc/config.class.php:94     CommonDBTM->showFormHeader()
+  marketplace/actualtime/inc/config.class.php:173    PluginActualtimeConfig::showConfigForm()
+  src/CommonGLPI.php:694                             PluginActualtimeConfig::displayTabContentForItem()
+  src/CommonGLPI.php:656                             CommonGLPI::displayStandardTab()
+  ajax/common.tabs.php:120                           CommonGLPI::displayStandardTab()
+  {"user":"2@fr-int-web1788.main-hosting.eu","mem_usage":"0.001\", 21.66Mio)"} 
+[2026-04-28 15:37:54] glpisqllog.ERROR: DBmysql::doQuery() in /home/u981745852/domains/suporteincv.com/public_html/src/DBmysql.php line 395
+  *** MySQL query error:
+  SQL: SHOW COLUMNS FROM `glpi_plugin_actualtime_configs`
+  Error: Table 'u981745852_incv.glpi_plugin_actualtime_configs' doesn't exist
+  Backtrace :
+  src/DBmysql.php:954                                DBmysql->doQuery()
+  src/CommonDBTM.php:618                             DBmysql->listFields()
+  src/CommonDBTM.php:3180                            CommonDBTM->getEmpty()
+  .../twig/twig/src/Extension/CoreExtension.php:1764 CommonDBTM->isEntityAssign()
+  ...tes/78/783323c9e7302dd474c5fad1127b2a1f.php:312 Twig\Extension\CoreExtension::getAttribute()
+  vendor/twig/twig/src/Template.php:360              __TwigTemplate_1ab8c5cdddb74d0bd536d6a65c432456->doDisplay()
+  vendor/twig/twig/src/Template.php:335              Twig\Template->yield()
+  vendor/twig/twig/src/TemplateWrapper.php:38        Twig\Template->render()
+  .../twig/twig/src/Extension/CoreExtension.php:1435 Twig\TemplateWrapper->render()
+  ...tes/30/30fa02db7da934359ceef5d431f6f375.php:132 Twig\Extension\CoreExtension::include()
+  vendor/twig/twig/src/Template.php:360              __TwigTemplate_d967e35aff623eaa071430f3e132b15a->doDisplay()
+  vendor/twig/twig/src/Template.php:327              Twig\Template->yield()
+  vendor/twig/twig/src/TemplateWrapper.php:45        Twig\Template->display()
+  src/Application/View/TemplateRenderer.php:184      Twig\TemplateWrapper->display()
+  src/CommonDBTM.php:2861                            Glpi\Application\View\TemplateRenderer->display()
+  marketplace/actualtime/inc/config.class.php:94     CommonDBTM->showFormHeader()
+  marketplace/actualtime/inc/config.class.php:173    PluginActualtimeConfig::showConfigForm()
+  src/CommonGLPI.php:694                             PluginActualtimeConfig::displayTabContentForItem()
+  src/CommonGLPI.php:656                             CommonGLPI::displayStandardTab()
+  ajax/common.tabs.php:120                           CommonGLPI::displayStandardTab()
+  {"user":"2@fr-int-web1788.main-hosting.eu","mem_usage":"0.001\", 21.66Mio)"} 
+[2026-05-06 13:09:15] glpisqllog.ERROR: DBmysql::doQuery() in /home/u981745852/domains/suporteincv.com/public_html/src/DBmysql.php line 395
+  *** MySQL query error:
+  SQL: SELECT * FROM `glpi_plugin_actualtime_tasks` WHERE `actual_begin` <= '2026-05-11 00:00:00' AND `actual_end` >= '2026-05-04 00:00:00' AND (`users_id` = '2') ORDER BY `actual_begin` ASC
+  Error: Table 'u981745852_incv.glpi_plugin_actualtime_tasks' doesn't exist
+  Backtrace :
+  src/DBmysqlIterator.php:112                        DBmysql->doQuery()
+  src/DBmysql.php:1105                               DBmysqlIterator->execute()
+  marketplace/actualtime/inc/task.class.php:1265     DBmysql->request()
+  src/Planning.php:2281                              PluginActualtimeTask::populatePlanning()
+  src/Planning.php:2044                              Planning::constructEventsArraySingleLine()
+  ajax/planning.php:50                               Planning::constructEventsArray()
+  public/index.php:82                                require()
+  {"user":"2@fr-int-web1788.main-hosting.eu"} 
+[2026-05-06 13:09:15] glpisqllog.ERROR: DBmysql::doQuery() in /home/u981745852/domains/suporteincv.com/public_html/src/DBmysql.php line 395
+  *** MySQL query error:
+  SQL: SELECT * FROM `glpi_plugin_actualtime_tasks` WHERE `actual_begin` <= '2026-05-11 00:00:00' AND `actual_end` >= '2026-05-04 00:00:00' AND (`users_id` = '2') ORDER BY `actual_begin` ASC
+  Error: Table 'u981745852_incv.glpi_plugin_actualtime_tasks' doesn't exist
+  Backtrace :
+  src/DBmysqlIterator.php:112                        DBmysql->doQuery()
+  src/DBmysql.php:1105                               DBmysqlIterator->execute()
+  marketplace/actualtime/inc/task.class.php:1265     DBmysql->request()
+  src/Planning.php:2281                              PluginActualtimeTask::populatePlanning()
+  src/Planning.php:2044                              Planning::constructEventsArraySingleLine()
+  ajax/planning.php:50                               Planning::constructEventsArray()
+  public/index.php:82                                require()
+  {"user":"2@fr-int-web1788.main-hosting.eu"} 
