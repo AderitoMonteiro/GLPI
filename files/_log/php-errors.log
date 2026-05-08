@@ -47566,3 +47566,87 @@ as recusou ativamente in C:\xampp\htdocs\GLPI\src\DBmysql.php at line 250
   src\Application\View\TemplateRenderer.php:184      Twig\Environment->load()
   index.php:137                                      Glpi\Application\View\TemplateRenderer->display()
   
+[2026-05-08 19:09:49] glpiphplog.CRITICAL:   *** Twig Error (Twig\Error\LoaderError): "Unable to find template "layout/parts/login/config_login.html.html.twig" (looked into: C:\xampp\htdocs\GLPI/templates)." in template "" at line 34
+  Backtrace :
+  ...r\twig\twig\src\Loader\FilesystemLoader.php:131 Twig\Loader\FilesystemLoader->findTemplate()
+  vendor\twig\twig\src\Environment.php:290           Twig\Loader\FilesystemLoader->getCacheKey()
+  vendor\twig\twig\src\Template.php:279              Twig\Environment->getTemplateClass()
+  ...ates\4a\4a579dc0840b06a806bb83e5b4faeeea.php:44 Twig\Template->loadTemplate()
+  vendor\twig\twig\src\Template.php:360              __TwigTemplate_a016ae1c8d16e6363376b774b8fa870f->doDisplay()
+  vendor\twig\twig\src\Template.php:327              Twig\Template->yield()
+  vendor\twig\twig\src\TemplateWrapper.php:45        Twig\Template->display()
+  src\Application\View\TemplateRenderer.php:184      Twig\TemplateWrapper->display()
+  index.php:137                                      Glpi\Application\View\TemplateRenderer->display()
+  
+[2026-05-08 19:09:49] glpiphplog.CRITICAL:   *** Twig Error (Twig\Error\LoaderError): "Unable to find template "layout/parts/login/config_login.html.html.twig" (looked into: C:\xampp\htdocs\GLPI/templates)." in template "" at line 34
+  Backtrace :
+  ...r\twig\twig\src\Loader\FilesystemLoader.php:131 Twig\Loader\FilesystemLoader->findTemplate()
+  vendor\twig\twig\src\Environment.php:290           Twig\Loader\FilesystemLoader->getCacheKey()
+  vendor\twig\twig\src\Template.php:279              Twig\Environment->getTemplateClass()
+  ...ates\4a\4a579dc0840b06a806bb83e5b4faeeea.php:44 Twig\Template->loadTemplate()
+  vendor\twig\twig\src\Template.php:360              __TwigTemplate_a016ae1c8d16e6363376b774b8fa870f->doDisplay()
+  vendor\twig\twig\src\Template.php:327              Twig\Template->yield()
+  vendor\twig\twig\src\TemplateWrapper.php:45        Twig\Template->display()
+  src\Application\View\TemplateRenderer.php:184      Twig\TemplateWrapper->display()
+  index.php:137                                      Glpi\Application\View\TemplateRenderer->display()
+  
+[2026-05-08 19:09:50] glpiphplog.CRITICAL:   *** Twig Error (Twig\Error\LoaderError): "Unable to find template "layout/parts/login/config_login.html.html.twig" (looked into: C:\xampp\htdocs\GLPI/templates)." in template "" at line 34
+  Backtrace :
+  ...r\twig\twig\src\Loader\FilesystemLoader.php:131 Twig\Loader\FilesystemLoader->findTemplate()
+  vendor\twig\twig\src\Environment.php:290           Twig\Loader\FilesystemLoader->getCacheKey()
+  vendor\twig\twig\src\Template.php:279              Twig\Environment->getTemplateClass()
+  ...ates\4a\4a579dc0840b06a806bb83e5b4faeeea.php:44 Twig\Template->loadTemplate()
+  vendor\twig\twig\src\Template.php:360              __TwigTemplate_a016ae1c8d16e6363376b774b8fa870f->doDisplay()
+  vendor\twig\twig\src\Template.php:327              Twig\Template->yield()
+  vendor\twig\twig\src\TemplateWrapper.php:45        Twig\Template->display()
+  src\Application\View\TemplateRenderer.php:184      Twig\TemplateWrapper->display()
+  index.php:137                                      Glpi\Application\View\TemplateRenderer->display()
+  
+[2026-05-08 19:09:50] glpiphplog.CRITICAL:   *** Twig Error (Twig\Error\LoaderError): "Unable to find template "layout/parts/login/config_login.html.html.twig" (looked into: C:\xampp\htdocs\GLPI/templates)." in template "" at line 34
+  Backtrace :
+  ...r\twig\twig\src\Loader\FilesystemLoader.php:131 Twig\Loader\FilesystemLoader->findTemplate()
+  vendor\twig\twig\src\Environment.php:290           Twig\Loader\FilesystemLoader->getCacheKey()
+  vendor\twig\twig\src\Template.php:279              Twig\Environment->getTemplateClass()
+  ...ates\4a\4a579dc0840b06a806bb83e5b4faeeea.php:44 Twig\Template->loadTemplate()
+  vendor\twig\twig\src\Template.php:360              __TwigTemplate_a016ae1c8d16e6363376b774b8fa870f->doDisplay()
+  vendor\twig\twig\src\Template.php:327              Twig\Template->yield()
+  vendor\twig\twig\src\TemplateWrapper.php:45        Twig\Template->display()
+  src\Application\View\TemplateRenderer.php:184      Twig\TemplateWrapper->display()
+  index.php:137                                      Glpi\Application\View\TemplateRenderer->display()
+  
+[2026-05-08 19:09:50] glpiphplog.CRITICAL:   *** Twig Error (Twig\Error\LoaderError): "Unable to find template "layout/parts/login/config_login.html.html.twig" (looked into: C:\xampp\htdocs\GLPI/templates)." in template "" at line 34
+  Backtrace :
+  ...r\twig\twig\src\Loader\FilesystemLoader.php:131 Twig\Loader\FilesystemLoader->findTemplate()
+  vendor\twig\twig\src\Environment.php:290           Twig\Loader\FilesystemLoader->getCacheKey()
+  vendor\twig\twig\src\Template.php:279              Twig\Environment->getTemplateClass()
+  ...ates\4a\4a579dc0840b06a806bb83e5b4faeeea.php:44 Twig\Template->loadTemplate()
+  vendor\twig\twig\src\Template.php:360              __TwigTemplate_a016ae1c8d16e6363376b774b8fa870f->doDisplay()
+  vendor\twig\twig\src\Template.php:327              Twig\Template->yield()
+  vendor\twig\twig\src\TemplateWrapper.php:45        Twig\Template->display()
+  src\Application\View\TemplateRenderer.php:184      Twig\TemplateWrapper->display()
+  index.php:137                                      Glpi\Application\View\TemplateRenderer->display()
+  
+[2026-05-08 19:09:51] glpiphplog.CRITICAL:   *** Twig Error (Twig\Error\LoaderError): "Unable to find template "layout/parts/login/config_login.html.html.twig" (looked into: C:\xampp\htdocs\GLPI/templates)." in template "" at line 34
+  Backtrace :
+  ...r\twig\twig\src\Loader\FilesystemLoader.php:131 Twig\Loader\FilesystemLoader->findTemplate()
+  vendor\twig\twig\src\Environment.php:290           Twig\Loader\FilesystemLoader->getCacheKey()
+  vendor\twig\twig\src\Template.php:279              Twig\Environment->getTemplateClass()
+  ...ates\4a\4a579dc0840b06a806bb83e5b4faeeea.php:44 Twig\Template->loadTemplate()
+  vendor\twig\twig\src\Template.php:360              __TwigTemplate_a016ae1c8d16e6363376b774b8fa870f->doDisplay()
+  vendor\twig\twig\src\Template.php:327              Twig\Template->yield()
+  vendor\twig\twig\src\TemplateWrapper.php:45        Twig\Template->display()
+  src\Application\View\TemplateRenderer.php:184      Twig\TemplateWrapper->display()
+  index.php:137                                      Glpi\Application\View\TemplateRenderer->display()
+  
+[2026-05-08 19:10:18] glpiphplog.CRITICAL:   *** Twig Error (Twig\Error\LoaderError): "Unable to find template "layout/parts/login/config_login.html.html.twig" (looked into: C:\xampp\htdocs\GLPI/templates)." in template "" at line 34
+  Backtrace :
+  ...r\twig\twig\src\Loader\FilesystemLoader.php:131 Twig\Loader\FilesystemLoader->findTemplate()
+  vendor\twig\twig\src\Environment.php:290           Twig\Loader\FilesystemLoader->getCacheKey()
+  vendor\twig\twig\src\Template.php:279              Twig\Environment->getTemplateClass()
+  ...ates\4a\4a579dc0840b06a806bb83e5b4faeeea.php:44 Twig\Template->loadTemplate()
+  vendor\twig\twig\src\Template.php:360              __TwigTemplate_a016ae1c8d16e6363376b774b8fa870f->doDisplay()
+  vendor\twig\twig\src\Template.php:327              Twig\Template->yield()
+  vendor\twig\twig\src\TemplateWrapper.php:45        Twig\Template->display()
+  src\Application\View\TemplateRenderer.php:184      Twig\TemplateWrapper->display()
+  index.php:137                                      Glpi\Application\View\TemplateRenderer->display()
+  

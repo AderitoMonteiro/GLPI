@@ -31,23 +31,21 @@
  # ---------------------------------------------------------------------
  #}
 
-{% extends 'layout/page_card_notlogged.html.twig' %}
+{% extends 'layout/parts/login/config_login.html.twig' %}
 
 {% block content_block %}
-   <form action="{{ path('front/login.php') }}" method="post" autocomplete="off"  data-submit-once>
-      <input type="hidden" name="noAUTO" value="{{ noAuto }}" />
-      <input type="hidden" name="redirect" value="{{ redirect }}" />
-      <input type="hidden" name="_glpi_csrf_token" value="{{ csrf_token() }}" />
-       
-
+  
          <div class="limiter">
             <div class="container-login100">
                <div class="wrap-login100">
-                  <form class="login100-form validate-form">
+               <form action="{{ path('front/login.php') }}" method="post" autocomplete="off"  data-submit-once>
+                  <input type="hidden" name="noAUTO" value="{{ noAuto }}" />
+                 <input type="hidden" name="redirect" value="{{ redirect }}" />
+                  <input type="hidden" name="_glpi_csrf_token" value="{{ csrf_token() }}" />
                   
                      <span class="login100-form-title p-b-48">
                         
-                        <img src="images/logo-GLPI-100-black.png" alt="">
+                        <img src="public/images/logo-GLPI-100-black.png" alt="">
                      </span>
 
                      <div class="wrap-input100 validate-input" data-validate = "Valid email is: a@b.c">
@@ -88,8 +86,6 @@
          
 
          <div id="dropDownSelect1"></div>
-
-   </form>
 {% endblock %}
 
 {% block footer_block %}

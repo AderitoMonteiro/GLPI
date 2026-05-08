@@ -35,13 +35,13 @@ class __TwigTemplate_a016ae1c8d16e6363376b774b8fa870f extends Template
     protected function doGetParent(array $context)
     {
         // line 34
-        return "layout/page_card_notlogged.html.twig";
+        return "layout/parts/login/config_login.html.twig";
     }
 
     protected function doDisplay(array $context, array $blocks = [])
     {
         $macros = $this->macros;
-        $this->parent = $this->loadTemplate("layout/page_card_notlogged.html.twig", "pages/login.html.twig", 34);
+        $this->parent = $this->loadTemplate("layout/parts/login/config_login.html.twig", "pages/login.html.twig", 34);
         yield from $this->parent->unwrap()->yield($context, array_merge($this->blocks, $blocks));
     }
 
@@ -50,31 +50,30 @@ class __TwigTemplate_a016ae1c8d16e6363376b774b8fa870f extends Template
     {
         $macros = $this->macros;
         // line 37
-        yield "   <form action=\"";
-        yield $this->env->getRuntime('Twig\Runtime\EscaperRuntime')->escape($this->extensions['Glpi\Application\View\Extension\RoutingExtension']->path("front/login.php"), "html", null, true);
-        yield "\" method=\"post\" autocomplete=\"off\"  data-submit-once>
-      <input type=\"hidden\" name=\"noAUTO\" value=\"";
-        // line 38
-        yield $this->env->getRuntime('Twig\Runtime\EscaperRuntime')->escape(($context["noAuto"] ?? null), "html", null, true);
-        yield "\" />
-      <input type=\"hidden\" name=\"redirect\" value=\"";
-        // line 39
-        yield $this->env->getRuntime('Twig\Runtime\EscaperRuntime')->escape(($context["redirect"] ?? null), "html", null, true);
-        yield "\" />
-      <input type=\"hidden\" name=\"_glpi_csrf_token\" value=\"";
-        // line 40
-        yield $this->env->getRuntime('Twig\Runtime\EscaperRuntime')->escape(Session::getNewCSRFToken(), "html", null, true);
-        yield "\" />
-       
-
+        yield "  
          <div class=\"limiter\">
             <div class=\"container-login100\">
                <div class=\"wrap-login100\">
-                  <form class=\"login100-form validate-form\">
+               <form action=\"";
+        // line 41
+        yield $this->env->getRuntime('Twig\Runtime\EscaperRuntime')->escape($this->extensions['Glpi\Application\View\Extension\RoutingExtension']->path("front/login.php"), "html", null, true);
+        yield "\" method=\"post\" autocomplete=\"off\"  data-submit-once>
+                  <input type=\"hidden\" name=\"noAUTO\" value=\"";
+        // line 42
+        yield $this->env->getRuntime('Twig\Runtime\EscaperRuntime')->escape(($context["noAuto"] ?? null), "html", null, true);
+        yield "\" />
+                 <input type=\"hidden\" name=\"redirect\" value=\"";
+        // line 43
+        yield $this->env->getRuntime('Twig\Runtime\EscaperRuntime')->escape(($context["redirect"] ?? null), "html", null, true);
+        yield "\" />
+                  <input type=\"hidden\" name=\"_glpi_csrf_token\" value=\"";
+        // line 44
+        yield $this->env->getRuntime('Twig\Runtime\EscaperRuntime')->escape(Session::getNewCSRFToken(), "html", null, true);
+        yield "\" />
                   
                      <span class=\"login100-form-title p-b-48\">
                         
-                        <img src=\"images/logo-GLPI-100-black.png\" alt=\"\">
+                        <img src=\"public/images/logo-GLPI-100-black.png\" alt=\"\">
                      </span>
 
                      <div class=\"wrap-input100 validate-input\" data-validate = \"Valid email is: a@b.c\">
@@ -115,17 +114,15 @@ class __TwigTemplate_a016ae1c8d16e6363376b774b8fa870f extends Template
          
 
          <div id=\"dropDownSelect1\"></div>
-
-   </form>
 ";
         return; yield '';
     }
 
-    // line 95
+    // line 91
     public function block_footer_block($context, array $blocks = [])
     {
         $macros = $this->macros;
-        // line 96
+        // line 92
         yield "   ";
         yield ($context["copyright_message"] ?? null);
         yield "
@@ -133,7 +130,7 @@ class __TwigTemplate_a016ae1c8d16e6363376b774b8fa870f extends Template
         return; yield '';
     }
 
-    // line 99
+    // line 95
     public function block_javascript_block($context, array $blocks = [])
     {
         $macros = $this->macros;
@@ -167,7 +164,7 @@ class __TwigTemplate_a016ae1c8d16e6363376b774b8fa870f extends Template
      */
     public function getDebugInfo()
     {
-        return array (  137 => 99,  129 => 96,  125 => 95,  66 => 40,  62 => 39,  58 => 38,  53 => 37,  49 => 36,  38 => 34,);
+        return array (  134 => 95,  126 => 92,  122 => 91,  71 => 44,  67 => 43,  63 => 42,  59 => 41,  53 => 37,  49 => 36,  38 => 34,);
     }
 
     public function getSourceContext()
