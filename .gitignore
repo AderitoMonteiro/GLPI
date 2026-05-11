@@ -1,0 +1,17 @@
+# Cache GLPI
+files/_cache/
+
+# Logs
+files/_log/
+
+# Sessões
+files/_sessions/
+
+# Uploads temporários
+files/_tmp/
+
+# Marketplace
+marketplace/
+
+# Vendor (opcional)
+vendor/
