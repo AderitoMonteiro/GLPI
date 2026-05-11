@@ -46,7 +46,7 @@ class __TwigTemplate_aa443ef8be5cd7e83bd78f5051ee6ab5 extends Template
         if ( !array_key_exists("css_files", $context)) {
             // line 36
             yield "   ";
-            $context["css_files"] = [["path" => "public/lib/base.css"], ["path" => "public/lib/main.css"], ["path" => "public/lib/vendor/bootstrap/css/bootstrap.min.css"], ["path" => "public/lib/vendor/animate/animate.css"], ["path" => "public/lib/vendor/css-hamburgers/hamburgers.min.css"], ["path" => "public/lib/vendor/css-hamburgers/hamburgers.min.css"], ["path" => "public/lib/vendor/animsition/css/animsition.min.css"], ["path" => "public/lib/vendor/select2/select2.min.css"], ["path" => "public/lib/vendor/daterangepicker/daterangepicker.css"], ["path" => "public/lib/fonts/font-awesome-4.7.0/css/font-awesome.min.css"], ["path" => "public/lib/fonts/iconic/css/material-design-iconic-font.min.css"]];
+            $context["css_files"] = [["path" => "public/lib/vendor/bootstrap/css/bootstrap.min.css"], ["path" => "public/lib/fonts/font-awesome-4.7.0/css/font-awesome.min.css"], ["path" => "public/lib/fonts/iconic/css/material-design-iconic-font.min.css"], ["path" => "public/lib/vendor/animate/animate.css"], ["path" => "public/lib/vendor/css-hamburgers/hamburgers.min.css"], ["path" => "public/lib/vendor/animsition/css/animsition.min.css"], ["path" => "public/lib/vendor/select2/select2.min.css"], ["path" => "public/lib/vendor/daterangepicker/daterangepicker.css"], ["path" => "public/lib/util.css"], ["path" => "public/lib/main.css"], ["path" => "public/lib/base.js"]];
             // line 50
             yield "   ";
             // line 51
@@ -54,63 +54,85 @@ class __TwigTemplate_aa443ef8be5cd7e83bd78f5051ee6ab5 extends Template
 ";
         }
         // line 53
+        yield "
+";
+        // line 54
         if ( !array_key_exists("js_files", $context)) {
-            // line 54
+            // line 55
             yield "   ";
-            $context["js_files"] = [["path" => "public/lib/vendor/jquery/jquery-3.2.1.min.js"], ["path" => "public/lib/vendor/animsition/js/animsition.min.js\""], ["path" => "public/lib/vendor/bootstrap/js/popper.js"], ["path" => "public/lib/vendor/bootstrap/js/bootstrap.min.js"], ["path" => "public/lib/vendor/select2/select2.min.js"], ["path" => "public/lib/vendor/daterangepicker/moment.min.js"], ["path" => "public/lib/vendor/daterangepicker/daterangepicker.js"], ["path" => "public/lib/vendor/countdowntime/countdowntime.js"], ["path" => "public/lib/js/main.js"]];
+            $context["js_files"] = [["path" => "public/lib/vendor/jquery/jquery-3.2.1.min.js"], ["path" => "public/lib/vendor/animsition/js/animsition.min.js"], ["path" => "public/lib/vendor/bootstrap/js/popper.js"], ["path" => "public/lib/vendor/bootstrap/js/bootstrap.min.js"], ["path" => "public/lib/vendor/select2/select2.min.js"], ["path" => "public/lib/vendor/daterangepicker/moment.min.js"], ["path" => "public/lib/vendor/daterangepicker/daterangepicker.js"], ["path" => "public/lib/vendor/countdowntime/countdowntime.js"], ["path" => "public/lib/main.js"]];
         }
-        // line 68
+        // line 69
+        yield "
+";
+        // line 70
+        if ( !array_key_exists("js_files_login", $context)) {
+            // line 71
+            yield "   ";
+            $context["js_files_login"] = [["path" => "public/lib/vendor/jquery/jquery-3.2.1.min.js"], ["path" => "public/lib/vendor/animsition/js/animsition.min.js"], ["path" => "public/lib/vendor/bootstrap/js/popper.js"], ["path" => "public/lib/vendor/bootstrap/js/bootstrap.min.js"], ["path" => "public/lib/vendor/select2/select2.min.js"], ["path" => "public/lib/vendor/daterangepicker/moment.min.js"], ["path" => "public/lib/vendor/daterangepicker/daterangepicker.js"], ["path" => "public/lib/vendor/countdowntime/countdowntime.js"], ["path" => "public/lib/main.js"]];
+        }
+        // line 85
         if ( !array_key_exists("js_modules", $context)) {
-            // line 69
+            // line 86
             yield "   ";
             $context["js_modules"] = [];
         }
-        // line 71
+        // line 88
         if ( !array_key_exists("custom_header_tags", $context)) {
-            // line 72
+            // line 89
             yield "   ";
             $context["custom_header_tags"] = [];
         }
-        // line 74
+        // line 91
         yield "
 ";
-        // line 76
-        $context["js_files"] = Twig\Extension\CoreExtension::merge(($context["js_files"] ?? null), $this->extensions['Glpi\Application\View\Extension\PluginExtension']->getPluginsJsScriptsFiles(true));
-        // line 77
+        // line 93
         $context["js_modules"] = Twig\Extension\CoreExtension::merge(($context["js_modules"] ?? null), $this->extensions['Glpi\Application\View\Extension\PluginExtension']->getPluginsJsModulesFiles(true));
-        // line 78
+        // line 94
         yield "
 ";
-        // line 79
+        // line 95
         $context["is_anonymous_page"] = true;
-        // line 80
+        // line 96
         yield "
 ";
-        // line 81
+        // line 97
         yield Twig\Extension\CoreExtension::include($this->env, $context, "layout/parts/head.html.twig");
         yield "
 <body>
      <div>
      
             ";
-        // line 85
+        // line 101
         yield from $this->unwrap()->yieldBlock('content_block', $context, $blocks);
-        // line 86
+        // line 102
         yield "            <div class=\"text-center text-muted mt-3\">
                ";
-        // line 87
+        // line 103
         yield from $this->unwrap()->yieldBlock('footer_block', $context, $blocks);
-        // line 88
+        // line 104
         yield "            </div>
 
-    </div>
+     </div>
 
-           
-
-   ";
-        // line 94
+     ";
+        // line 108
+        $context['_parent'] = $context;
+        $context['_seq'] = CoreExtension::ensureTraversable(($context["js_files_login"] ?? null));
+        foreach ($context['_seq'] as $context["_key"] => $context["js"]) {
+            // line 109
+            yield "         <script src=\"";
+            yield $this->env->getRuntime('Twig\Runtime\EscaperRuntime')->escape(CoreExtension::getAttribute($this->env, $this->source, $context["js"], "path", [], "any", false, false, false, 109), "html", null, true);
+            yield "\"></script>
+      ";
+        }
+        $_parent = $context['_parent'];
+        unset($context['_seq'], $context['_iterated'], $context['_key'], $context['js'], $context['_parent'], $context['loop']);
+        $context = array_intersect_key($context, $_parent) + $_parent;
+        // line 111
+        yield "   ";
         yield from $this->unwrap()->yieldBlock('javascript_block', $context, $blocks);
-        // line 95
+        // line 114
         yield "</body>
 </html>
 
@@ -119,24 +141,26 @@ class __TwigTemplate_aa443ef8be5cd7e83bd78f5051ee6ab5 extends Template
         return; yield '';
     }
 
-    // line 85
+    // line 101
     public function block_content_block($context, array $blocks = [])
     {
         $macros = $this->macros;
         return; yield '';
     }
 
-    // line 87
+    // line 103
     public function block_footer_block($context, array $blocks = [])
     {
         $macros = $this->macros;
         return; yield '';
     }
 
-    // line 94
+    // line 111
     public function block_javascript_block($context, array $blocks = [])
     {
         $macros = $this->macros;
+        yield "   
+   ";
         return; yield '';
     }
 
@@ -161,7 +185,7 @@ class __TwigTemplate_aa443ef8be5cd7e83bd78f5051ee6ab5 extends Template
      */
     public function getDebugInfo()
     {
-        return array (  137 => 94,  130 => 87,  123 => 85,  114 => 95,  112 => 94,  104 => 88,  102 => 87,  99 => 86,  97 => 85,  90 => 81,  87 => 80,  85 => 79,  82 => 78,  80 => 77,  78 => 76,  75 => 74,  71 => 72,  69 => 71,  65 => 69,  63 => 68,  59 => 54,  57 => 53,  53 => 51,  51 => 50,  48 => 36,  46 => 35,  44 => 34,  41 => 33,);
+        return array (  159 => 111,  152 => 103,  145 => 101,  136 => 114,  133 => 111,  124 => 109,  120 => 108,  114 => 104,  112 => 103,  109 => 102,  107 => 101,  100 => 97,  97 => 96,  95 => 95,  92 => 94,  90 => 93,  87 => 91,  83 => 89,  81 => 88,  77 => 86,  75 => 85,  71 => 71,  69 => 70,  66 => 69,  62 => 55,  60 => 54,  57 => 53,  53 => 51,  51 => 50,  48 => 36,  46 => 35,  44 => 34,  41 => 33,);
     }
 
     public function getSourceContext()

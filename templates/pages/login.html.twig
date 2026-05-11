@@ -45,21 +45,39 @@
                   
                      <span class="login100-form-title p-b-48">
                         
-                        <img src="public/images/logo-GLPI-100-black.png" alt="">
+                        <img src="public/images/INCV_Slogan_principal_policromatica.png" alt="">
                      </span>
 
-                     <div class="wrap-input100 validate-input" data-validate = "Valid email is: a@b.c">
-                        <input class="input100" type="text" name="email">
+                     <div class="wrap-input100 validate-input">
+                        <input class="input100" type="text" id="login_name" name="{{ namfield }}" placeholder="" tabindex="1">
                         <span class="focus-input100" data-placeholder="Email"></span>
                      </div>
-
+                    
                      <div class="wrap-input100 validate-input" data-validate="Enter password">
                         <span class="btn-show-pass">
                            <i class="zmdi zmdi-eye"></i>
                         </span>
-                        <input class="input100" type="password" name="pass">
+
+                        
+                        <input class="input100" type="password" id="login_password" name="{{ pwdfield }}" placeholder="" autocomplete="off" tabindex="2">
                         <span class="focus-input100" data-placeholder="Password"></span>
+                        
                      </div>
+
+                     {% if constant('GLPI_DEMO_MODE') %}
+                        <div class="mb-3" hidden>
+                           <label class="form-label" for="dropdown_language{{ rand }}">{{ __('Language') }}</label>
+                           {{ languages_dropdown|raw }}
+                        </div>
+                     {% endif %}
+
+                     {% if config('display_login_source') %}
+                        <div class="mb-3" hidden>
+                           <label class="form-label" for="dropdown_auth{{ rand }}">{{ __('Login source') }}</label>
+                           {{ auth_dropdown_login|raw }}
+                        </div>
+                     {% endif %}
+
 
                      <div class="container-login100-form-btn">
                         <div class="wrap-login100-form-btn">
@@ -72,11 +90,11 @@
 
                      <div class="text-center p-t-115">
                         <span class="txt1">
-                           Don’t have an account?
+                           Esqueceu-se da palavra-passe?
                         </span>
 
-                        <a class="txt2" href="#">
-                           Sign Up
+                        <a class="txt2" href="{{ path('front/lostpassword.php?lostpassword=1') }}">
+                           Aqui!
                         </a>
                      </div>
                   </form>
@@ -84,7 +102,6 @@
             </div>
          </div>
          
-
          <div id="dropDownSelect1"></div>
 {% endblock %}
 

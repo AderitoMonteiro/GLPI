@@ -73,21 +73,71 @@ class __TwigTemplate_a016ae1c8d16e6363376b774b8fa870f extends Template
                   
                      <span class=\"login100-form-title p-b-48\">
                         
-                        <img src=\"public/images/logo-GLPI-100-black.png\" alt=\"\">
+                        <img src=\"public/images/INCV_Slogan_principal_policromatica.png\" alt=\"\">
                      </span>
 
-                     <div class=\"wrap-input100 validate-input\" data-validate = \"Valid email is: a@b.c\">
-                        <input class=\"input100\" type=\"text\" name=\"email\">
+                     <div class=\"wrap-input100 validate-input\">
+                        <input class=\"input100\" type=\"text\" id=\"login_name\" name=\"";
+        // line 52
+        yield $this->env->getRuntime('Twig\Runtime\EscaperRuntime')->escape(($context["namfield"] ?? null), "html", null, true);
+        yield "\" placeholder=\"\" tabindex=\"1\">
                         <span class=\"focus-input100\" data-placeholder=\"Email\"></span>
                      </div>
-
+                    
                      <div class=\"wrap-input100 validate-input\" data-validate=\"Enter password\">
                         <span class=\"btn-show-pass\">
                            <i class=\"zmdi zmdi-eye\"></i>
                         </span>
-                        <input class=\"input100\" type=\"password\" name=\"pass\">
+
+                        
+                        <input class=\"input100\" type=\"password\" id=\"login_password\" name=\"";
+        // line 62
+        yield $this->env->getRuntime('Twig\Runtime\EscaperRuntime')->escape(($context["pwdfield"] ?? null), "html", null, true);
+        yield "\" placeholder=\"\" autocomplete=\"off\" tabindex=\"2\">
                         <span class=\"focus-input100\" data-placeholder=\"Password\"></span>
+                        
                      </div>
+
+                     ";
+        // line 67
+        if (Twig\Extension\CoreExtension::constant("GLPI_DEMO_MODE")) {
+            // line 68
+            yield "                        <div class=\"mb-3\" hidden>
+                           <label class=\"form-label\" for=\"dropdown_language";
+            // line 69
+            yield $this->env->getRuntime('Twig\Runtime\EscaperRuntime')->escape(($context["rand"] ?? null), "html", null, true);
+            yield "\">";
+            yield $this->env->getRuntime('Twig\Runtime\EscaperRuntime')->escape(__("Language"), "html", null, true);
+            yield "</label>
+                           ";
+            // line 70
+            yield ($context["languages_dropdown"] ?? null);
+            yield "
+                        </div>
+                     ";
+        }
+        // line 73
+        yield "
+                     ";
+        // line 74
+        if ($this->extensions['Glpi\Application\View\Extension\ConfigExtension']->config("display_login_source")) {
+            // line 75
+            yield "                        <div class=\"mb-3\" hidden>
+                           <label class=\"form-label\" for=\"dropdown_auth";
+            // line 76
+            yield $this->env->getRuntime('Twig\Runtime\EscaperRuntime')->escape(($context["rand"] ?? null), "html", null, true);
+            yield "\">";
+            yield $this->env->getRuntime('Twig\Runtime\EscaperRuntime')->escape(__("Login source"), "html", null, true);
+            yield "</label>
+                           ";
+            // line 77
+            yield ($context["auth_dropdown_login"] ?? null);
+            yield "
+                        </div>
+                     ";
+        }
+        // line 80
+        yield "
 
                      <div class=\"container-login100-form-btn\">
                         <div class=\"wrap-login100-form-btn\">
@@ -100,11 +150,14 @@ class __TwigTemplate_a016ae1c8d16e6363376b774b8fa870f extends Template
 
                      <div class=\"text-center p-t-115\">
                         <span class=\"txt1\">
-                           Don’t have an account?
+                           Esqueceu-se da palavra-passe?
                         </span>
 
-                        <a class=\"txt2\" href=\"#\">
-                           Sign Up
+                        <a class=\"txt2\" href=\"";
+        // line 96
+        yield $this->env->getRuntime('Twig\Runtime\EscaperRuntime')->escape($this->extensions['Glpi\Application\View\Extension\RoutingExtension']->path("front/lostpassword.php?lostpassword=1"), "html", null, true);
+        yield "\">
+                           Aqui!
                         </a>
                      </div>
                   </form>
@@ -112,17 +165,16 @@ class __TwigTemplate_a016ae1c8d16e6363376b774b8fa870f extends Template
             </div>
          </div>
          
-
          <div id=\"dropDownSelect1\"></div>
 ";
         return; yield '';
     }
 
-    // line 91
+    // line 108
     public function block_footer_block($context, array $blocks = [])
     {
         $macros = $this->macros;
-        // line 92
+        // line 109
         yield "   ";
         yield ($context["copyright_message"] ?? null);
         yield "
@@ -130,7 +182,7 @@ class __TwigTemplate_a016ae1c8d16e6363376b774b8fa870f extends Template
         return; yield '';
     }
 
-    // line 95
+    // line 112
     public function block_javascript_block($context, array $blocks = [])
     {
         $macros = $this->macros;
@@ -164,7 +216,7 @@ class __TwigTemplate_a016ae1c8d16e6363376b774b8fa870f extends Template
      */
     public function getDebugInfo()
     {
-        return array (  134 => 95,  126 => 92,  122 => 91,  71 => 44,  67 => 43,  63 => 42,  59 => 41,  53 => 37,  49 => 36,  38 => 34,);
+        return array (  186 => 112,  178 => 109,  174 => 108,  158 => 96,  140 => 80,  134 => 77,  128 => 76,  125 => 75,  123 => 74,  120 => 73,  114 => 70,  108 => 69,  105 => 68,  103 => 67,  95 => 62,  82 => 52,  71 => 44,  67 => 43,  63 => 42,  59 => 41,  53 => 37,  49 => 36,  38 => 34,);
     }
 
     public function getSourceContext()
