@@ -48006,3 +48006,39 @@ as recusou ativamente in C:\xampp\htdocs\GLPI\src\DBmysql.php at line 250
   src\Application\View\TemplateRenderer.php:184      Twig\TemplateWrapper->display()
   index.php:137                                      Glpi\Application\View\TemplateRenderer->display()
   
+[2026-05-12 14:15:09] glpiphplog.WARNING: Failed to fetch key "{key}": Failed to unserialize values, did you forget to install the "igbinary" extension? {"key":"37ba6b90686d96e05e5e6426965323964476c0e9","exception":"[object] (RuntimeException(code: 0): Failed to unserialize values, did you forget to install the \"igbinary\" extension? at C:\\xampp\\htdocs\\GLPI\\vendor\\symfony\\cache\\Marshaller\\DefaultMarshaller.php:84)","cache-adapter":"Symfony\\Component\\Cache\\Adapter\\FilesystemAdapter"} 
+[2026-05-12 14:20:04] glpiphplog.WARNING: Failed to fetch key "{key}": Failed to unserialize values, did you forget to install the "igbinary" extension? {"key":"2d03bd78927f28fc033adce8927dbc91f9026652","exception":"[object] (RuntimeException(code: 0): Failed to unserialize values, did you forget to install the \"igbinary\" extension? at C:\\xampp\\htdocs\\GLPI\\vendor\\symfony\\cache\\Marshaller\\DefaultMarshaller.php:84)","cache-adapter":"Symfony\\Component\\Cache\\Adapter\\FilesystemAdapter"} 
+[2026-05-12 14:26:18] glpiphplog.WARNING:   *** PHP Warning (2): Undefined array key "displayinfofor" in C:\xampp\htdocs\GLPI\marketplace\actualtime\inc\config.class.php at line 109
+  Backtrace :
+  marketplace\actualtime\inc\config.class.php:173    PluginActualtimeConfig::showConfigForm()
+  src\CommonGLPI.php:694                             PluginActualtimeConfig::displayTabContentForItem()
+  ajax\common.tabs.php:120                           CommonGLPI::displayStandardTab()
+  
+[2026-05-12 14:26:18] glpiphplog.WARNING:   *** PHP Warning (2): Undefined array key "showtimerinbox" in C:\xampp\htdocs\GLPI\marketplace\actualtime\inc\config.class.php at line 208
+  Backtrace :
+  marketplace\actualtime\inc\config.class.php:123    PluginActualtimeConfig->showTimerInBox()
+  marketplace\actualtime\inc\config.class.php:173    PluginActualtimeConfig::showConfigForm()
+  src\CommonGLPI.php:694                             PluginActualtimeConfig::displayTabContentForItem()
+  ajax\common.tabs.php:120                           CommonGLPI::displayStandardTab()
+  
+[2026-05-12 14:26:18] glpiphplog.WARNING:   *** PHP Warning (2): Undefined array key "autoopenrunning" in C:\xampp\htdocs\GLPI\marketplace\actualtime\inc\config.class.php at line 220
+  Backtrace :
+  marketplace\actualtime\inc\config.class.php:129    PluginActualtimeConfig->autoOpenRunning()
+  marketplace\actualtime\inc\config.class.php:173    PluginActualtimeConfig::showConfigForm()
+  src\CommonGLPI.php:694                             PluginActualtimeConfig::displayTabContentForItem()
+  ajax\common.tabs.php:120                           CommonGLPI::displayStandardTab()
+  
+[2026-05-12 14:26:18] glpiphplog.WARNING:   *** PHP Warning (2): Undefined array key "autoupdate_duration" in C:\xampp\htdocs\GLPI\marketplace\actualtime\inc\config.class.php at line 231
+  Backtrace :
+  marketplace\actualtime\inc\config.class.php:135    PluginActualtimeConfig->autoUpdateDuration()
+  marketplace\actualtime\inc\config.class.php:173    PluginActualtimeConfig::showConfigForm()
+  src\CommonGLPI.php:694                             PluginActualtimeConfig::displayTabContentForItem()
+  ajax\common.tabs.php:120                           CommonGLPI::displayStandardTab()
+  
+[2026-05-12 14:26:18] glpiphplog.CRITICAL:   *** Uncaught Exception TypeError: PluginActualtimeConfig::autoUpdateDuration(): Return value must be of type bool, null returned in C:\xampp\htdocs\GLPI\marketplace\actualtime\inc\config.class.php at line 231
+  Backtrace :
+  marketplace\actualtime\inc\config.class.php:135    PluginActualtimeConfig->autoUpdateDuration()
+  marketplace\actualtime\inc\config.class.php:173    PluginActualtimeConfig::showConfigForm()
+  src\CommonGLPI.php:694                             PluginActualtimeConfig::displayTabContentForItem()
+  ajax\common.tabs.php:120                           CommonGLPI::displayStandardTab()
+  

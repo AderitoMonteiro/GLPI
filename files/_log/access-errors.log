@@ -622,3 +622,5 @@ User ID: 3 tried to access or perform an action on /front/user.form.php?id=8 wit
 		/home/u981745852/domains/suporteincv.com/public_html/src/CommonDBTM.php:6553 displayAccessDeniedPage()
 		/home/u981745852/domains/suporteincv.com/public_html/front/user.form.php:253 displayFullPageForItem()
 		/home/u981745852/domains/suporteincv.com/public_html/public/index.php:82 require()
+2026-05-12 14:09:20 [@RAI-GV-INCV-23]
+CSRF check failed for User ID:  at /front/login.php

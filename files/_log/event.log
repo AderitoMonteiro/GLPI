@@ -180,3 +180,35 @@
 [login] 3: Falhou login para incv do IP 
 2026-05-11 19:24:19 [@RAI-GV-INCV-23]
 [login] 3: incv ligou-se do IP 
+2026-05-12 11:04:46 [@RAI-GV-INCV-23]
+[login] 3: incv ligou-se do IP 
+2026-05-12 11:10:30 [@RAI-GV-INCV-23]
+[login] 3: incv ligou-se do IP 
+2026-05-12 11:22:45 [@RAI-GV-INCV-23]
+[login] 3: incv ligou-se do IP 
+2026-05-12 11:31:52 [@RAI-GV-INCV-23]
+[login] 3: incv ligou-se do IP 
+2026-05-12 11:34:42 [@RAI-GV-INCV-23]
+[login] 3: Falhou login para incv do IP 
+2026-05-12 11:36:12 [@RAI-GV-INCV-23]
+[login] 3: Falhou login para incv do IP 
+2026-05-12 11:36:58 [@RAI-GV-INCV-23]
+[login] 3: incv ligou-se do IP 
+2026-05-12 14:09:35 [@RAI-GV-INCV-23]
+[login] 3: Falhou login para incv do IP 
+2026-05-12 14:10:55 [@RAI-GV-INCV-23]
+[login] 3: Falhou login para incv do IP 
+2026-05-12 14:11:23 [@RAI-GV-INCV-23]
+[login] 3: incv ligou-se do IP 
+2026-05-12 14:16:40 [@RAI-GV-INCV-23]
+[login] 3: Falhou login para glpi do IP 
+2026-05-12 14:19:18 [@RAI-GV-INCV-23]
+[login] 3: incv ligou-se do IP 
+2026-05-12 14:30:09 [2@RAI-GV-INCV-23]
+[setup] [Plugin 177] 3: Extensão Behaviours foi instalada por incv (2).
+2026-05-12 14:30:17 [2@RAI-GV-INCV-23]
+[setup] [Plugin 178] 3: Extensão Campos adicionais foi instalada por incv (2).
+2026-05-12 14:30:25 [2@RAI-GV-INCV-23]
+[setup] [Plugin 179] 3: Extensão Behaviours foi ativada por incv (2).
+2026-05-12 14:30:46 [2@RAI-GV-INCV-23]
+[setup] [Plugin 180] 3: Extensão Campos adicionais foi ativada por incv (2).
